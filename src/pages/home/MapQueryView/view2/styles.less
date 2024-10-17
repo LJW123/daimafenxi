@@ -1,0 +1,122 @@
+ .query_data_view {
+     position: absolute;
+     z-index: 0;
+     //  min-width: 240px;
+     //  min-height: 100px;
+
+     .arrow_border {
+         position: absolute;
+         width: 0;
+         height: 0;
+         border-width: 10px;
+         border-style: solid;
+         border-color: transparent;
+
+         .arrow {
+             position: absolute;
+             width: 0;
+             height: 0;
+             border-width: 9px;
+             border-style: solid;
+             border-color: transparent;
+
+         }
+     }
+
+
+     .content_view {
+         background: linear-gradient(270deg, rgba(42, 80, 132, 0.8) 0%, rgba(22, 43, 75, 0.8) 100%);
+         border-radius: 6px;
+         padding: 8px;
+         margin: 10px;
+         height: calc(100% - 35px);
+         max-height: 800px;
+         display: flex;
+         flex-direction: column;
+
+         &:hover {
+             .data_view {
+                 overflow-y: auto;
+
+             }
+         }
+
+         .head_view {
+             height: 24px;
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             background: linear-gradient(90deg, #2A84C4 0%, rgba(56, 106, 143, 0) 100%);
+             padding: 8px;
+             //  min-width: 180px;
+
+             .title {
+                 font-size: 16px;
+                 text-overflow: ellipsis;
+                 /* 超出部分显示省略号 */
+                 white-space: nowrap;
+                 /*规定段落中的文本不进行换行 */
+                 overflow: hidden;
+             }
+
+             .close_btn {
+                 color: #5AC9F2;
+                 font-size: 12px;
+                 cursor: pointer;
+             }
+         }
+
+
+         .data_view {
+              flex: 1;
+             overflow-y: hidden;
+             //  padding: 0 5px;
+             //  font-size: 14px;
+             //  display: flex;
+             //  flex-direction: row;
+             //  flex-wrap: wrap;
+
+             .data_item {
+                 width: 50%;
+                 display: flex;
+                 padding: 4px 0;
+
+                 .item_label {
+                     color: #9AF8DB;
+                     margin-right: 8px;
+                     min-width: 60px;
+                     max-width: 150px;
+                 }
+
+                 .item_value {
+                     //  flex: 1;
+                     color: white;
+                 }
+             }
+         }
+
+
+         .footer_view {
+             display: flex;
+             justify-content: space-between;
+             flex-wrap: wrap;
+             padding: 5px 4px;
+             font-size: 14px;
+             height: 30px;
+
+             .btn_view {
+                 cursor: pointer;
+                 display: flex;
+                 width: 110px;
+                 height: 20px;
+                 justify-content: center;
+                 align-items: center;
+                 background: rgba(57, 172, 210, 0.2);
+                 border-radius: 3px 3px 3px 3px;
+                 border: 1px solid #3ABFEB;
+                 margin-bottom: 10px;
+             }
+         }
+     }
+
+ }

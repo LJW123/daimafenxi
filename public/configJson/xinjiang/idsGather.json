@@ -1,0 +1,856 @@
+{
+    "新疆市注记": {
+        "id": 1786902720063040,
+        "type": "data"
+    },
+    "新疆县注记": {
+        "id": 1786902809531968,
+        "type": "data"
+    },
+    "河流": {
+        "id": 1786914407884352,
+        "type": "data"
+    },
+    "重点河流监控点": {
+        "id": 1791047638582848,
+        "type": "data"
+    },
+    "10亿径流量河流(18)": {
+        "id": 1787293537896000,
+        "type": "data"
+    },
+    "干级河流": {
+        "id": 1786871168226880,
+        "type": "data"
+    },
+    "零级河流": {
+        "id": 1786871168226880,
+        "type": "data"
+    },
+    "一级河流": {
+        "id": 1786871706129984,
+        "type": "data"
+    },
+    "二级河流": {
+        "id": 1786872130754112,
+        "type": "data"
+    },
+    "三级河流": {
+        "id": 1786872412583488,
+        "type": "data"
+    },
+    "四级河流": {
+        "id": 1786872543098432,
+        "type": "data"
+    },
+    "五级河流": {
+        "id": 1786872659207744,
+        "type": "data"
+    },
+    "六级河流": {
+        "id": 1786872736626240,
+        "type": "data"
+    },
+    "重点湖泊监控点": {
+        "id": 1791047665268288,
+        "type": "data"
+    },
+    "重点监控水库": {
+        "id": 1791430953707072,
+        "type": "data"
+    },
+    "重点监控水文站": {
+        "id": 1791047534253632,
+        "type": "data"
+    },
+    "重点监控取水口": {
+        "id": 1791529200059968,
+        "type": "data"
+    },
+    "重要干支流交汇口": {
+        "id": 1791047589918272,
+        "type": "data"
+    },
+    "重点监控在建工程": {
+        "id": 1791047562118720,
+        "type": "data"
+    },
+    "湖泊": {
+        "id": 1786914678195776,
+        "type": "data"
+    },
+    "水库面": {
+        "id": 1788708954641984,
+        "type": "data"
+    },
+    "1757793616569920": {
+        "id": 1757793616569920,
+        "type": "service"
+    },
+    "1757793813218880": {
+        "id": 1757793813218880,
+        "type": "service"
+    },
+    "1级河流": {
+        "id": 1787175609755200,
+        "type": "service"
+    },
+    "2级河流": {
+        "id": 1787175852848704,
+        "type": "service"
+    },
+    "3级河流": {
+        "id": 1787176143738432,
+        "type": "service"
+    },
+    "4级河流": {
+        "id": 1787176357623360,
+        "type": "service"
+    },
+    "5级河流": {
+        "id": 1787176527095360,
+        "type": "service"
+    },
+    "6级河流": {
+        "id": 1787176691414592,
+        "type": "service"
+    },
+    "7级河流": {
+        "id": 1787176844957248,
+        "type": "service"
+    },
+    "重点河流": {
+        "id": 1787535804560960,
+        "type": "service"
+    },
+    "雨量站信息": {
+        "layerName": "雨量站信息",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getPPDataByAdCode.json?adCode=650000",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "雨量站信息",
+                "id": "雨量站信息_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.6
+                            ],
+                            [
+                                12,
+                                0.6
+                            ]
+                        ]
+                    },
+                    "icon-image": "雨量站红"
+                }
+            },
+            {
+                "source": "雨量站信息",
+                "id": "雨量站信息-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{name}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "水库站信息": {
+        "layerName": "水库站信息",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getRRDataByAdCode.json?adCode=650000",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "水库站信息",
+                "id": "水库站信息_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.4
+                            ],
+                            [
+                                12,
+                                0.4
+                            ]
+                        ]
+                    },
+                    "icon-image": "水库站"
+                }
+            },
+            {
+                "source": "水库站信息",
+                "id": "水库站信息-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{name}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "河道站信息": {
+        "layerName": "河道站信息",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getZZDataByAdCode.json?adCode=650000",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "河道站信息",
+                "id": "河道站信息_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.4
+                            ],
+                            [
+                                12,
+                                0.4
+                            ]
+                        ]
+                    },
+                    "icon-image": "河道站"
+                }
+            },
+            {
+                "source": "河道站信息",
+                "id": "河道站信息-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{name}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "实时雨情": {
+        "layerName": "实时雨情",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getPPtnNewData.json?dateTime=2024-09-23",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "实时雨情",
+                "id": "实时雨情_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.6
+                            ],
+                            [
+                                12,
+                                0.6
+                            ]
+                        ]
+                    },
+                    "icon-image": [
+                        "case",
+                        [
+                            "<",
+                            [
+                                "get",
+                                "dyp"
+                            ],
+                            10
+                        ],
+                        "雨量站浅绿",
+                        [
+                            "<",
+                            [
+                                "get",
+                                "dyp"
+                            ],
+                            25
+                        ],
+                        "雨量站深绿",
+                        [
+                            "<",
+                            [
+                                "get",
+                                "dyp"
+                            ],
+                            50
+                        ],
+                        "雨量站浅蓝",
+                        [
+                            "<",
+                            [
+                                "get",
+                                "dyp"
+                            ],
+                            100
+                        ],
+                        "雨量站深蓝",
+                        [
+                            "<",
+                            [
+                                "get",
+                                "dyp"
+                            ],
+                            250
+                        ],
+                        "雨量站浅紫",
+                        [
+                            ">",
+                            [
+                                "get",
+                                "dyp"
+                            ],
+                            250
+                        ],
+                        "雨量站深紫",
+                        "雨量站灰"
+                    ]
+                }
+            },
+            {
+                "source": "实时雨情",
+                "id": "实时雨情-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{dyp}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "实时水情": {
+        "layerName": "实时水情",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getRiverNewDataSwj.json?objType=OBJ_ZQ,OBJ_ZZ&dateTime=2024-09-25",
+        "type": "interface",
+        "requestType": "get",
+        "html": "实时水情",
+        "idField": "objCode"
+    },
+    "水库水情": {
+        "layerName": "水库水情",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getRsvrNewDataSwj.json?dateTime=2024-09-25",
+        "type": "interface",
+        "requestType": "get",
+        "html": "水库水情",
+        "idField": "objCode"
+    },
+    "河道水情告警": {
+        "layerName": "河道水情告警",
+        "url": "http://10.65.6.47:8917/stMonitorInfoApi/map/getRiverWarnDataList.json?dateTime=2024-09-25&warnGrd=1%2C2%2C3&start=2024-09-25",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "河道水情告警",
+                "id": "河道水情告警_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.6
+                            ],
+                            [
+                                12,
+                                0.6
+                            ]
+                        ]
+                    },
+                    "icon-image": "河道水情告警"
+                }
+            },
+            {
+                "source": "河道水情告警",
+                "id": "河道水情告警-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{objName}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "水库超汛告警": {
+        "layerName": "水库超汛告警",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getResFloodControl.json?dateTime=2024-09-25&projScal=1%2C2%2C3",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "水库超汛告警",
+                "id": "水库超讯告警_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.6
+                            ],
+                            [
+                                12,
+                                0.6
+                            ]
+                        ]
+                    },
+                    "icon-image": "水库超汛告警"
+                }
+            },
+            {
+                "source": "水库超汛告警",
+                "id": "水库超汛告警-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{objName}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "水量监测点信息": {
+        "layerName": "水量监测点信息",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getWvstDataByAdCode.json?adCode=650000",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "水量监测点信息",
+                "id": "水量监测点信息_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.4
+                            ],
+                            [
+                                12,
+                                0.4
+                            ]
+                        ]
+                    },
+                    "icon-image": "取水口"
+                }
+            },
+            {
+                "source": "水量监测点信息",
+                "id": "水量监测点信息-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{name}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "区域用水总量": {
+        "layerName": "区域用水总量",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getUseWaterStatisticByAdCode.json?adCode=650000&dateType=year&statisticType=C",
+        "type": "interface",
+        "requestType": "get",
+        "html": "区域用水总量"
+    },
+    "区域用水总量(月)": {
+        "layerName": "区域用水总量(月)",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getUseWaterStatisticByAdCode.json?adCode=650000&dateType=month&statisticType=C",
+        "type": "interface",
+        "requestType": "get",
+        "html": "区域用水总量"
+    },
+    "区域用水总量(年)": {
+        "layerName": "区域用水总量(年)",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getUseWaterStatisticByAdCode.json?adCode=650000&dateType=year&statisticType=C",
+        "type": "interface",
+        "requestType": "get",
+        "html": "全部用水量"
+    },
+    "区域用水总量(总量)": {
+        "layerName": "区域用水总量(总量)",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getUseWaterStatisticByAdCode.json?adCode=650000&dateType=year&statisticType=C",
+        "type": "interface",
+        "requestType": "get",
+        "html": "全部用水量"
+    },
+    "区域用水总量(地表水)": {
+        "layerName": "区域用水总量(地表水)",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getUseWaterStatisticByAdCode.json?adCode=650000&dateType=year&statisticType=GC",
+        "type": "interface",
+        "requestType": "get",
+        "html": "全部用水量"
+    },
+    "区域用水总量(地下水)": {
+        "layerName": "区域用水总量(地下水)",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getUseWaterStatisticByAdCode.json?adCode=650107&dateType=year&statisticType=UC",
+        "type": "interface",
+        "requestType": "get",
+        "html": "全部用水量"
+    },
+    "大坝安全监测点信息": {
+        "layerName": "大坝安全监测点信息",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getSrhrdsResInfo.json",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "大坝安全监测点信息",
+                "id": "大坝安全监测点信息_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.4
+                            ],
+                            [
+                                12,
+                                0.4
+                            ]
+                        ]
+                    },
+                    "icon-image": "大坝安全监测"
+                }
+            },
+            {
+                "source": "大坝安全监测点信息",
+                "id": "大坝安全监测点信息-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{resName}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "水库工程": {
+        "layerName": "水库工程",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getResDataByAdCode.json?adCode=650000",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "水库工程",
+                "id": "水库工程_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.2
+                            ],
+                            [
+                                12,
+                                0.2
+                            ]
+                        ]
+                    },
+                    "icon-image": "水库"
+                }
+            },
+            {
+                "source": "水库工程",
+                "id": "水库工程-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{name}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "灌区": {
+        "layerName": "灌区",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getIrrDataByAdCode.json?adCode=650000",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "灌区",
+                "id": "灌区_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.4
+                            ],
+                            [
+                                12,
+                                0.4
+                            ]
+                        ]
+                    },
+                    "icon-image": "灌区"
+                }
+            },
+            {
+                "source": "灌区",
+                "id": "灌区-注记",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "text-field": "{name}",
+                    "text-font": [
+                        "Microsoft YaHei"
+                    ],
+                    "text-size": 12,
+                    "text-anchor": "top",
+                    "text-offset": [
+                        0,
+                        1
+                    ]
+                },
+                "paint": {
+                    "text-color": "#ffffff",
+                    "text-halo-color": "#ffffff",
+                    "text-halo-width": 0.2
+                },
+                "filter": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    "灌区面": {
+        "id": 1786912923694656,
+        "type": "data"
+    },
+    "灌区取用水量": {
+        "layerName": "灌区取用水量",
+        "url": "http://10.65.6.47:8917/fpPreviewApi/map/getIrrDataByAdCode.json?adCode=650000",
+        "type": "interface",
+        "requestType": "get",
+        "layers": [
+            {
+                "source": "灌区取用水量",
+                "id": "灌区取用水量_image",
+                "type": "symbol",
+                "minzoom": 1,
+                "maxzoom": 24,
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": {
+                        "stops": [
+                            [
+                                6,
+                                0.4
+                            ],
+                            [
+                                12,
+                                0.4
+                            ]
+                        ]
+                    },
+                    "icon-image": "实时"
+                }
+            }
+        ]
+    }
+}

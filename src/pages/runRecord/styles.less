@@ -1,0 +1,45 @@
+.runRecord_view {
+  position: absolute;
+  top: 64px;
+  height: 100%;
+  width: 100%;
+  color: black;
+  background-color: #f0f3fa;
+
+  .content_view {
+    height: calc(100% - 64px);
+    background-color: white;
+
+    .right_view {
+      height: 100%;
+
+      .head_view {
+        font-weight: bold;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        background-color: #2c6fd3;
+        color: white;
+
+        .name_view {
+          width: calc(100% - 20px);
+          text-overflow: ellipsis;
+          /* 超出部分显示省略号 */
+          white-space: nowrap;
+          /*规定段落中的文本不进行换行 */
+          overflow: hidden;
+        }
+      }
+
+
+      .right_content_view {
+        height: calc(100% - 40px);
+      }
+
+      .close_btn {
+        cursor: pointer;
+      }
+    }
+  }
+}

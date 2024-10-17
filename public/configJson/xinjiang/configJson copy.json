@@ -1,0 +1,310 @@
+{
+    "styleSchema": {
+        "mainPage": {
+            "bgImage": "homebg.png"
+        },
+        "headerPage": {
+            "bgImage": "header.png",
+            "style": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "height": 64,
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover"
+            }
+        },
+        "leftPage": {
+            "bgImage": "leftbg.png",
+            "titleImage": "left_title.png",
+            "style": {
+                "top": 80,
+                "left": 0
+            }
+        },
+        "rightPage": {
+            "bgImage": "",
+            "style": {
+                "width": 400,
+                "top": 80,
+                "right": 10
+            }
+        }
+    },
+    "dataSchema": {
+        "pageDatas": [
+            {
+                "icon": "heliu.png",
+                "title": "河流",
+                "legend": "legend1.png",
+                "childs": [
+                    {
+                        "icon": "",
+                        "title": "重点河流监控点(49)",
+                        "legend": "",
+                        "metaId": "重点河流监控点",
+                        "childs": [],
+                        "charts": []
+                    },
+                    {
+                        "icon": "",
+                        "title": "10亿径流量河流(18)",
+                        "legend": "",
+                        "metaId": "10亿径流量河流(18)",
+                        "childs": [],
+                        "charts": []
+                    },
+                    {
+                        "icon": "",
+                        "title": "干级河流",
+                        "metaId": "干级河流",
+                        "maxzoom": 22,
+                        "minzoom": 1
+                    },
+                    {
+                        "icon": "",
+                        "title": "一级河流",
+                        "metaId": "一级河流",
+                        "maxzoom": 22,
+                        "minzoom": 1
+                    },
+                    {
+                        "icon": "",
+                        "title": "二级河流",
+                        "metaId": "二级河流",
+                        "maxzoom": 22,
+                        "minzoom": 1
+                    },
+                    {
+                        "icon": "",
+                        "title": "三级河流",
+                        "metaId": "三级河流",
+                        "maxzoom": 22,
+                        "minzoom": 1
+                    },
+                    {
+                        "icon": "",
+                        "title": "四级河流",
+                        "metaId": "四级河流",
+                        "maxzoom": 22,
+                        "minzoom": 1
+                    },
+                    {
+                        "icon": "",
+                        "title": "五级河流",
+                        "metaId": "五级河流",
+                        "maxzoom": 22,
+                        "minzoom": 1
+                    },
+                    {
+                        "icon": "",
+                        "title": "六级河流",
+                        "metaId": "六级河流",
+                        "maxzoom": 22,
+                        "minzoom": 1
+                    }
+                ],
+                "charts": [
+                    {
+                        "chartViewId": 1786904199878208
+                    }
+                ]
+            },
+            {
+                "icon": "hupo.png",
+                "title": "湖泊",
+                "legend": "legend1.png",
+                "childs": [
+                    {
+                        "icon": "",
+                        "title": "重点湖泊监控点(10)",
+                        "legend": "",
+                        "metaId": "重点湖泊监控点",
+                        "childs": [],
+                        "charts": []
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "shuiku.png",
+                "title": "水库",
+                "legend": "zzjg_legend.png",
+                "childs": [
+                    {
+                        "icon": "sk.png",
+                        "title": "重点监控水库(243)",
+                        "metaId": "重点监控水库",
+                        "filter": [
+                            {
+                                "attr": "IS_MNTR",
+                                "childs": [
+                                    {
+                                        "label": "已建",
+                                        "value": "是",
+                                        "image": "水库监控绿"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "JR_SLT",
+                                "childs": [
+                                    {
+                                        "label": "已接入",
+                                        "value": "已接入"
+                                    },
+                                    {
+                                        "label": "未接入",
+                                        "value": "未接入"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "IS_ONLINE",
+                                "childs": [
+                                    {
+                                        "label": "在线",
+                                        "value": "在线"
+                                    },
+                                    {
+                                        "label": "掉线",
+                                        "value": "离线"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "charts": [
+                    {
+                        "chartViewId": 1793633019610688
+                    },
+                    {
+                        "chartViewId": 1786953251137088
+                    }
+                ]
+            },
+            {
+                "icon": "shuiwenzhan.png",
+                "title": "水文站",
+                "legend": "legend1.png",
+                "childs": [
+                    {
+                        "icon": "",
+                        "title": "重点监控水文站(169)",
+                        "metaId": "重点监控水文站"
+                    }
+                ],
+                "charts": [
+                    {
+                        "chartViewId": 1786954061383232
+                    }
+                ]
+            },
+            {
+                "icon": "dwfl.png",
+                "title": "取水口",
+                "legend": "dwfl_legend.png",
+                "childs": [
+                    {
+                        "icon": "szdx.png",
+                        "title": "重点监控取水口(70)",
+                        "metaId": "重点监控取水口",
+                        "filter": [
+                            {
+                                "attr": "IS_MNTR",
+                                "childs": [
+                                    {
+                                        "label": "已建",
+                                        "value": "已建"
+                                       
+                                    },
+                                    {
+                                        "label": "在建",
+                                        "value": "在建"
+                                        
+                                    },
+                                    {
+                                        "label": "未建",
+                                        "value": "未建"
+                                        
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "JR_SLT",
+                                "childs": [
+                                    {
+                                        "label": "已接入",
+                                        "value": "已接入"
+                                       
+                                    },
+                                    {
+                                        "label": "未接入",
+                                        "value": "未接入"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "IS_ONLINE",
+                                "childs": [
+                                    {
+                                        "label": "在线",
+                                        "value": "在线"
+                                    },
+                                    {
+                                        "label": "掉线",
+                                        "value": "掉线"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "charts": [
+                    {
+                        "chartViewId": 1793634652100160
+                    },
+                    {
+                        "chartViewId": 1786955355186752
+                    }
+                ]
+            },
+            {
+                "icon": "hqyc.png",
+                "title": "汇合点",
+                "legend": "hqyc_legend.png",
+                "childs": [
+                    {
+                        "icon": "",
+                        "title": "重要干支流交汇口(23)",
+                        "metaId": "重要干支流交汇口",
+                        "childs": [],
+                        "charts": []
+                    }
+                ],
+                "charts": [
+                    {
+                        "chartViewId": 1786958395872832
+                    }
+                ]
+            },
+            {
+                "icon": "clgs.png",
+                "title": "在建工程",
+                "legend": "legend1.png",
+                "childs": [
+                    {
+                        "title": "重点监控在建工程(35)",
+                        "metaId": "重点监控在建工程"
+                    }
+                ],
+                "charts": [
+                    {
+                        "chartViewId": 1788675891607104
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,3259 @@
+{
+    "styleSchema": {
+        "mainPage": {
+            "bgImage": "homebg.png"
+        },
+        "headerPage": {
+            "bgImage": "header.png",
+            "style": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "height": 64,
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover"
+            }
+        },
+        "leftPage": {
+            "bgImage": "leftbg.png",
+            "titleImage": "left_title.png",
+            "style": {
+                "top": 40,
+                "left": 0,
+                "bottom": 40
+            }
+        },
+        "rightPage": {
+            "bgImage": "",
+            "style": {
+                "width": 400,
+                "top": 40,
+                "right": 0
+            }
+        }
+    },
+    "dataSchema": {
+        "pageDatas": [
+            {
+                "icon": "jcxx.png",
+                "title": "基础信息",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "zj.png",
+                        "title": "新疆市注记",
+                        "legend": "",
+                        "metaId": "新疆市注记",
+                        "childs": [],
+                        "charts": []
+                    },
+                    {
+                        "icon": "hl.png",
+                        "title": "河流",
+                        "legend": "",
+                        "metaId": "",
+                        "childs": [
+                            {
+                                "icon": "hl.png",
+                                "title": "十亿以上径流量",
+                                "legend": "",
+                                "metaId": "10亿径流量河流(18)",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 123,
+                                        "chartType": "Table",
+                                        "metaId": "10亿径流量河流(18)",
+                                        "viewParams": {
+                                            "headTitle": "10亿径流量河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "河流级别",
+                                                    "name": "RV_GRAD",
+                                                    "domain": {
+                                                        "type": "dict",
+                                                        "values": [
+                                                            {
+                                                                "label": "一级",
+                                                                "value": "0.0"
+                                                            },
+                                                            {
+                                                                "label": "二级",
+                                                                "value": "1.0"
+                                                            },
+                                                            {
+                                                                "label": "三级",
+                                                                "value": "2.0"
+                                                            },
+                                                            {
+                                                                "label": "四级",
+                                                                "value": "3.0"
+                                                            },
+                                                            {
+                                                                "label": "五级",
+                                                                "value": "4.0"
+                                                            },
+                                                            {
+                                                                "label": "六级",
+                                                                "value": "5.0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "一级",
+                                "legend": "",
+                                "metaId": "零级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "零级河流",
+                                        "viewParams": {
+                                            "headTitle": "一级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "河流级别",
+                                                    "name": "RV_GRAD",
+                                                    "domain": {
+                                                        "type": "dict",
+                                                        "values": [
+                                                            {
+                                                                "label": "一级",
+                                                                "value": "0.0"
+                                                            },
+                                                            {
+                                                                "label": "二级",
+                                                                "value": "1.0"
+                                                            },
+                                                            {
+                                                                "label": "三级",
+                                                                "value": "2.0"
+                                                            },
+                                                            {
+                                                                "label": "四级",
+                                                                "value": "3.0"
+                                                            },
+                                                            {
+                                                                "label": "五级",
+                                                                "value": "4.0"
+                                                            },
+                                                            {
+                                                                "label": "六级",
+                                                                "value": "5.0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "二级",
+                                "legend": "",
+                                "metaId": "一级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "一级河流",
+                                        "viewParams": {
+                                            "headTitle": "二级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "河流级别",
+                                                    "name": "RV_GRAD",
+                                                    "domain": {
+                                                        "type": "dict",
+                                                        "values": [
+                                                            {
+                                                                "label": "一级",
+                                                                "value": "0.0"
+                                                            },
+                                                            {
+                                                                "label": "二级",
+                                                                "value": "1.0"
+                                                            },
+                                                            {
+                                                                "label": "三级",
+                                                                "value": "2.0"
+                                                            },
+                                                            {
+                                                                "label": "四级",
+                                                                "value": "3.0"
+                                                            },
+                                                            {
+                                                                "label": "五级",
+                                                                "value": "4.0"
+                                                            },
+                                                            {
+                                                                "label": "六级",
+                                                                "value": "5.0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "三级",
+                                "legend": "",
+                                "metaId": "二级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "二级河流",
+                                        "viewParams": {
+                                            "headTitle": "三级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "河流级别",
+                                                    "name": "RV_GRAD",
+                                                    "domain": {
+                                                        "type": "dict",
+                                                        "values": [
+                                                            {
+                                                                "label": "一级",
+                                                                "value": "0.0"
+                                                            },
+                                                            {
+                                                                "label": "二级",
+                                                                "value": "1.0"
+                                                            },
+                                                            {
+                                                                "label": "三级",
+                                                                "value": "2.0"
+                                                            },
+                                                            {
+                                                                "label": "四级",
+                                                                "value": "3.0"
+                                                            },
+                                                            {
+                                                                "label": "五级",
+                                                                "value": "4.0"
+                                                            },
+                                                            {
+                                                                "label": "六级",
+                                                                "value": "5.0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "四级",
+                                "legend": "",
+                                "metaId": "三级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "三级河流",
+                                        "viewParams": {
+                                            "headTitle": "四级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "河流级别",
+                                                    "name": "RV_GRAD",
+                                                    "domain": {
+                                                        "type": "dict",
+                                                        "values": [
+                                                            {
+                                                                "label": "一级",
+                                                                "value": "0.0"
+                                                            },
+                                                            {
+                                                                "label": "二级",
+                                                                "value": "1.0"
+                                                            },
+                                                            {
+                                                                "label": "三级",
+                                                                "value": "2.0"
+                                                            },
+                                                            {
+                                                                "label": "四级",
+                                                                "value": "3.0"
+                                                            },
+                                                            {
+                                                                "label": "五级",
+                                                                "value": "4.0"
+                                                            },
+                                                            {
+                                                                "label": "六级",
+                                                                "value": "5.0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "五级",
+                                "legend": "",
+                                "metaId": "四级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "四级河流",
+                                        "viewParams": {
+                                            "headTitle": "五级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "河流级别",
+                                                    "name": "RV_GRAD",
+                                                    "domain": {
+                                                        "type": "dict",
+                                                        "values": [
+                                                            {
+                                                                "label": "一级",
+                                                                "value": "0.0"
+                                                            },
+                                                            {
+                                                                "label": "二级",
+                                                                "value": "1.0"
+                                                            },
+                                                            {
+                                                                "label": "三级",
+                                                                "value": "2.0"
+                                                            },
+                                                            {
+                                                                "label": "四级",
+                                                                "value": "3.0"
+                                                            },
+                                                            {
+                                                                "label": "五级",
+                                                                "value": "4.0"
+                                                            },
+                                                            {
+                                                                "label": "六级",
+                                                                "value": "5.0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "六级",
+                                "legend": "",
+                                "metaId": "五级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "五级河流",
+                                        "viewParams": {
+                                            "headTitle": "六级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "河流级别",
+                                                    "name": "RV_GRAD",
+                                                    "domain": {
+                                                        "type": "dict",
+                                                        "values": [
+                                                            {
+                                                                "label": "一级",
+                                                                "value": "0.0"
+                                                            },
+                                                            {
+                                                                "label": "二级",
+                                                                "value": "1.0"
+                                                            },
+                                                            {
+                                                                "label": "三级",
+                                                                "value": "2.0"
+                                                            },
+                                                            {
+                                                                "label": "四级",
+                                                                "value": "3.0"
+                                                            },
+                                                            {
+                                                                "label": "五级",
+                                                                "value": "4.0"
+                                                            },
+                                                            {
+                                                                "label": "六级",
+                                                                "value": "5.0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            }
+                        ],
+                        "charts": [],
+                        "filter": []
+                    },
+                    {
+                        "icon": "hpm.png",
+                        "title": "湖泊面",
+                        "legend": "",
+                        "metaId": "湖泊",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "湖泊",
+                                "viewParams": {
+                                    "headTitle": "湖泊列表",
+                                    "fields": [
+                                        {
+                                            "title": "湖泊名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "湖泊级别",
+                                            "name": "OBJ_GRADE"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "skm.png",
+                        "title": "水库面",
+                        "legend": "",
+                        "metaId": "水库面",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水库面",
+                                "viewParams": {
+                                    "headTitle": "水库面列表",
+                                    "fields": [
+                                        {
+                                            "title": "水库名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "水库级别",
+                                            "name": "GRADE"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "sk.png",
+                        "title": "水库工程",
+                        "legend": "",
+                        "metaId": "水库工程",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": null,
+                                "chartType": "Table",
+                                "metaId": "水库工程",
+                                "viewParams": {
+                                    "headTitle": "水库工程",
+                                    "fields": [
+                                        {
+                                            "title": "水库名称",
+                                            "name": "name"
+                                        },
+                                        {
+                                            "title": "水库级别",
+                                            "name": "engScal",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "大型",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "中型",
+                                                        "value": "2"
+                                                    },
+                                                    {
+                                                        "label": "小型",
+                                                        "value": "3"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ],
+                        "filter": [
+                            {
+                                "attr": "engScal",
+                                "childs": [
+                                    {
+                                        "label": "大型",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "label": "中型",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "label": "小型",
+                                        "value": "3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "zsyx.png",
+                        "title": "正射影像（24）",
+                        "legend": "",
+                        "metaId": "",
+                        "childs": [],
+                        "charts": []
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "spdy.png",
+                "title": "视频调度",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "he.png",
+                        "title": "河流监控",
+                        "metaId": "重点河流监控点",
+                        "default": true,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "重点河流监控点",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "河流名称",
+                                            "name": "河流名"
+                                        },
+                                        {
+                                            "title": "建设状态",
+                                            "name": "建设情",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已建",
+                                                        "value": "已建"
+                                                    },
+                                                    {
+                                                        "label": "在建",
+                                                        "value": "在建"
+                                                    },
+                                                    {
+                                                        "label": "拟建",
+                                                        "value": "拟建",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "接入状态",
+                                            "name": "接入水",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已接入",
+                                                        "value": "已接入"
+                                                    },
+                                                    {
+                                                        "label": "未接入",
+                                                        "value": "未接入",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "是否在线",
+                                            "name": "是否在线"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "hp.png",
+                        "title": "湖泊监控",
+                        "metaId": "重点湖泊监控点",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "重点湖泊监控点",
+                                "viewParams": {
+                                    "headTitle": "湖泊监控列表",
+                                    "fields": [
+                                        {
+                                            "title": "湖泊名称",
+                                            "name": "湖泊名"
+                                        },
+                                        {
+                                            "title": "建设状态",
+                                            "name": "建设情/",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "拟建",
+                                                        "value": "拟建"
+                                                    },
+                                                    {
+                                                        "label": "已建",
+                                                        "value": "已建"
+                                                    },
+                                                    {
+                                                        "label": "未建",
+                                                        "value": "未建",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "接入状态",
+                                            "name": "水利厅",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已接入",
+                                                        "value": "已接入"
+                                                    },
+                                                    {
+                                                        "label": "未接入",
+                                                        "value": "未接入",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "是否在线",
+                                            "name": "IS_ONLINE",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "在线",
+                                                        "value": "在线",
+                                                        "styles": {
+                                                            "color": "#00D56E"
+                                                        }
+                                                    },
+                                                    {
+                                                        "label": "离线",
+                                                        "value": "离线",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "hh.png",
+                        "title": "汇合口监控",
+                        "metaId": "重要干支流交汇口",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "重要干支流交汇口",
+                                "viewParams": {
+                                    "headTitle": "汇合口监控列表",
+                                    "fields": [
+                                        {
+                                            "title": "汇合口名称",
+                                            "name": "汇合点"
+                                        },
+                                        {
+                                            "title": "建设状态",
+                                            "name": "建设情",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已建",
+                                                        "value": "已建"
+                                                    },
+                                                    {
+                                                        "label": "未建",
+                                                        "value": "未建",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "接入状态",
+                                            "name": "接入状态"
+                                        },
+                                        {
+                                            "title": "是否在线",
+                                            "name": "是否在线"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "sk.png",
+                        "title": "水库工程监控",
+                        "metaId": "重点监控水库",
+                        "filter": [
+                            {
+                                "attr": "IS_MNTR",
+                                "childs": [
+                                    {
+                                        "label": "已建",
+                                        "value": "是",
+                                        "image": "水库监控绿",
+                                        "default": true
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "JR_SLT",
+                                "childs": [
+                                    {
+                                        "label": "已接入",
+                                        "value": "已接入",
+                                        "default": true
+                                    },
+                                    {
+                                        "label": "未接入",
+                                        "value": "未接入"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "IS_ONLINE",
+                                "childs": [
+                                    {
+                                        "label": "在线",
+                                        "value": "在线"
+                                    },
+                                    {
+                                        "label": "掉线",
+                                        "value": "离线"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "重点监控水库",
+                                "viewParams": {
+                                    "headTitle": "水库列表",
+                                    "fields": [
+                                        {
+                                            "title": "水库名称",
+                                            "name": "RES_NAME"
+                                        },
+                                        {
+                                            "title": "建设状态",
+                                            "name": "IS_MNTR",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已建",
+                                                        "value": "是"
+                                                    },
+                                                    {
+                                                        "label": "未建",
+                                                        "value": "否",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "接入状态",
+                                            "name": "JR_SLT",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已接入",
+                                                        "value": "已接入"
+                                                    },
+                                                    {
+                                                        "label": "未接入",
+                                                        "value": "未接入",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "是否在线",
+                                            "name": "IS_ONLINE",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "在线",
+                                                        "value": "在线",
+                                                        "styles": {
+                                                            "color": "#00D56E"
+                                                        }
+                                                    },
+                                                    {
+                                                        "label": "离线",
+                                                        "value": "离线",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "szdx.png",
+                        "title": "取水口监控",
+                        "metaId": "重点监控取水口",
+                        "filter": [
+                            {
+                                "attr": "IS_MNTR",
+                                "childs": [
+                                    {
+                                        "label": "已建",
+                                        "value": "已建"
+                                    },
+                                    {
+                                        "label": "在建",
+                                        "value": "在建"
+                                    },
+                                    {
+                                        "label": "未建",
+                                        "value": "未建"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "JR_SLT",
+                                "childs": [
+                                    {
+                                        "label": "已接入",
+                                        "value": "已接入"
+                                    },
+                                    {
+                                        "label": "未接入",
+                                        "value": "未接入"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "IS_ONLINE",
+                                "childs": [
+                                    {
+                                        "label": "在线",
+                                        "value": "在线"
+                                    },
+                                    {
+                                        "label": "掉线",
+                                        "value": "掉线"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "重点监控取水口",
+                                "viewParams": {
+                                    "headTitle": "取水口监控列表",
+                                    "fields": [
+                                        {
+                                            "title": "取水口名称",
+                                            "name": "WVST_NAME"
+                                        },
+                                        {
+                                            "title": "建设状态",
+                                            "name": "IS_MNTR",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已建",
+                                                        "value": "已建"
+                                                    },
+                                                    {
+                                                        "label": "在建",
+                                                        "value": "在建"
+                                                    },
+                                                    {
+                                                        "label": "未建",
+                                                        "value": "未建",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "接入状态",
+                                            "name": "JR_SLT",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已接入",
+                                                        "value": "已接入"
+                                                    },
+                                                    {
+                                                        "label": "未接入",
+                                                        "value": "未接入",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "是否在线",
+                                            "name": "IS_ONLINE",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "在线",
+                                                        "value": "在线",
+                                                        "styles": {
+                                                            "color": "#00D56E"
+                                                        }
+                                                    },
+                                                    {
+                                                        "label": "离线",
+                                                        "value": "离线",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "swz.png",
+                        "title": "水文站监控",
+                        "metaId": "重点监控水文站",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "重点监控水文站",
+                                "viewParams": {
+                                    "headTitle": "水文站监控列表",
+                                    "fields": [
+                                        {
+                                            "title": "水文站名称",
+                                            "name": "ST_NAME"
+                                        },
+                                        {
+                                            "title": "建设状态",
+                                            "name": "IS_MNTR",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已建",
+                                                        "value": "已建"
+                                                    },
+                                                    {
+                                                        "label": "拟建",
+                                                        "value": "拟建"
+                                                    },
+                                                    {
+                                                        "label": "未建",
+                                                        "value": "未建",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "接入状态",
+                                            "name": "JR_SLT",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已接入",
+                                                        "value": "已接入"
+                                                    },
+                                                    {
+                                                        "label": "未接入",
+                                                        "value": "未接入",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "是否在线",
+                                            "name": "IS_ONLINE",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "在线",
+                                                        "value": "在线",
+                                                        "styles": {
+                                                            "color": "#00D56E"
+                                                        }
+                                                    },
+                                                    {
+                                                        "label": "离线",
+                                                        "value": "离线",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "jian.png",
+                        "title": "在建工程监控",
+                        "metaId": "重点监控在建工程",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1788675891607104,
+                                "chartType": "Table",
+                                "metaId": "重点监控在建工程",
+                                "viewParams": {
+                                    "headTitle": "在建工程列表",
+                                    "fields": [
+                                        {
+                                            "title": "工程名",
+                                            "name": "工程名"
+                                        },
+                                        {
+                                            "title": "建设状态",
+                                            "name": "监控建/",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已建",
+                                                        "value": "已建"
+                                                    },
+                                                    {
+                                                        "label": "在建",
+                                                        "value": "在建"
+                                                    },
+                                                    {
+                                                        "label": "未建",
+                                                        "value": "未建（拟建）",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "接入状态",
+                                            "name": "接入状态",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "已接入",
+                                                        "value": "已接入"
+                                                    },
+                                                    {
+                                                        "label": "未接入",
+                                                        "value": "未接入",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "是否在线",
+                                            "name": "是否在线",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "在线",
+                                                        "value": "在线",
+                                                        "styles": {
+                                                            "color": "#00D56E"
+                                                        }
+                                                    },
+                                                    {
+                                                        "label": "离线",
+                                                        "value": "离线",
+                                                        "styles": {
+                                                            "color": "#AEAEAE"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "shzhfy.png",
+                "title": "水旱灾害防御",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "ylz.png",
+                        "title": "雨量站",
+                        "metaId": "雨量站信息",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "雨量站信息",
+                                "viewParams": {
+                                    "headTitle": "雨量站信息",
+                                    "fields": [
+                                        {
+                                            "title": "id",
+                                            "name": "id"
+                                        },
+                                        {
+                                            "title": "code",
+                                            "name": "code"
+                                        },
+                                        {
+                                            "title": "名称",
+                                            "name": "name"
+                                        },
+                                        {
+                                            "title": "纬度",
+                                            "name": "stLat"
+                                        },
+                                        {
+                                            "title": "经度",
+                                            "name": "stLong"
+                                        },
+                                        {
+                                            "title": "对象类型",
+                                            "name": "objType",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "流域",
+                                                        "value": "BAS"
+                                                    },
+                                                    {
+                                                        "label": "河流",
+                                                        "value": "RV"
+                                                    },
+                                                    {
+                                                        "label": "水库",
+                                                        "value": "RES"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "对象子类型",
+                                            "name": "subType"
+                                        },
+                                        {
+                                            "title": "行政区代码",
+                                            "name": "adCode"
+                                        },
+                                        {
+                                            "title": "显示级别",
+                                            "name": "showLevel"
+                                        },
+                                        {
+                                            "title": "数据来源",
+                                            "name": "dataOrigin",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "水利对象基础库",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "一张图",
+                                                        "value": "2"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "管理单位",
+                                            "name": "riunCode"
+                                        },
+                                        {
+                                            "title": "名录比照结果标识",
+                                            "name": "specificFlag"
+                                        },
+                                        {
+                                            "title": "监测代码",
+                                            "name": "monitorCode"
+                                        },
+                                        {
+                                            "title": "水文监测站代码",
+                                            "name": "stCode"
+                                        },
+                                        {
+                                            "title": "水文监测站名称",
+                                            "name": "stName"
+                                        },
+                                        {
+                                            "title": "水文监测站类型",
+                                            "name": "stType"
+                                        },
+                                        {
+                                            "title": "水文监测站经度",
+                                            "name": "stLong"
+                                        },
+                                        {
+                                            "title": "水文监测站纬度",
+                                            "name": "stLat"
+                                        },
+                                        {
+                                            "title": "站址",
+                                            "name": "stLoc"
+                                        },
+                                        {
+                                            "title": "设站年月",
+                                            "name": "stYearMon"
+                                        },
+                                        {
+                                            "title": "始报年月",
+                                            "name": "begRepoYearMon"
+                                        },
+                                        {
+                                            "title": "岸别",
+                                            "name": "bank",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "左",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "右",
+                                                        "value": "2"
+                                                    },
+                                                    {
+                                                        "label": "不分",
+                                                        "value": "0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "监测站方位",
+                                            "name": "stDir"
+                                        },
+                                        {
+                                            "title": "集水面积(km2)",
+                                            "name": "catArea"
+                                        },
+                                        {
+                                            "title": "监测项目",
+                                            "name": "moniItnm"
+                                        },
+                                        {
+                                            "title": "基准基面名称",
+                                            "name": "dtmName"
+                                        },
+                                        {
+                                            "title": "基面高差",
+                                            "name": "dtmElev"
+                                        },
+                                        {
+                                            "title": "备注",
+                                            "name": "note"
+                                        },
+                                        {
+                                            "title": "记录生效时间",
+                                            "name": "effDate"
+                                        },
+                                        {
+                                            "title": "记录失效时间",
+                                            "name": "exprDate"
+                                        },
+                                        {
+                                            "title": "河流名称",
+                                            "name": "rvnm"
+                                        },
+                                        {
+                                            "title": "所在河流名称",
+                                            "name": "hnnm"
+                                        },
+                                        {
+                                            "title": "所在流域名称",
+                                            "name": "bsnm"
+                                        },
+                                        {
+                                            "title": "基面修正值",
+                                            "name": "dtpr"
+                                        },
+                                        {
+                                            "title": "报汛等级",
+                                            "name": "frgrd"
+                                        },
+                                        {
+                                            "title": "隶属行业单位",
+                                            "name": "atcunit"
+                                        },
+                                        {
+                                            "title": "交换管理单位",
+                                            "name": "locality"
+                                        },
+                                        {
+                                            "title": "信息管理单位",
+                                            "name": "admauth"
+                                        },
+                                        {
+                                            "title": "测站方位",
+                                            "name": "stazt"
+                                        },
+                                        {
+                                            "title": "至河口距离",
+                                            "name": "dstrvm"
+                                        },
+                                        {
+                                            "title": "集水面积",
+                                            "name": "drna"
+                                        },
+                                        {
+                                            "title": "拼音码",
+                                            "name": "phcd"
+                                        },
+                                        {
+                                            "title": "启用标志",
+                                            "name": "usfl"
+                                        },
+                                        {
+                                            "title": "是否删除",
+                                            "name": "isDel",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "是",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "否",
+                                                        "value": "0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "数据来源",
+                                            "name": "datasource",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "山洪灾害",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "常规报汛站",
+                                                        "value": "2"
+                                                    },
+                                                    {
+                                                        "label": "中小河流",
+                                                        "value": "3"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "是否山洪站",
+                                            "name": "isShanhong",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "是",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "否",
+                                                        "value": "0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "警戒水位",
+                                            "name": "alwtlv"
+                                        },
+                                        {
+                                            "title": "保证水位",
+                                            "name": "gnwtlv"
+                                        },
+                                        {
+                                            "title": "警戒流量",
+                                            "name": "alfl"
+                                        },
+                                        {
+                                            "title": "保证流量",
+                                            "name": "gnwtfl"
+                                        },
+                                        {
+                                            "title": "显示等级",
+                                            "name": "showLevel"
+                                        },
+                                        {
+                                            "title": "县代码",
+                                            "name": "c3"
+                                        },
+                                        {
+                                            "title": "县名称",
+                                            "name": "n3"
+                                        },
+                                        {
+                                            "title": "市代码",
+                                            "name": "c2"
+                                        },
+                                        {
+                                            "title": "市名称",
+                                            "name": "n2"
+                                        },
+                                        {
+                                            "title": "省代码",
+                                            "name": "c1"
+                                        },
+                                        {
+                                            "title": "省名称",
+                                            "name": "n1"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "dxsk.png",
+                        "title": "水库站",
+                        "metaId": "水库站信息",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水库站信息",
+                                "viewParams": {
+                                    "headTitle": "水库站信息",
+                                    "fields": [
+                                        {
+                                            "title": "id",
+                                            "name": "id"
+                                        },
+                                        {
+                                            "title": "code",
+                                            "name": "code"
+                                        },
+                                        {
+                                            "title": "名称",
+                                            "name": "name"
+                                        },
+                                        {
+                                            "title": "纬度",
+                                            "name": "stLat"
+                                        },
+                                        {
+                                            "title": "经度",
+                                            "name": "stLong"
+                                        },
+                                        {
+                                            "title": "对象类型",
+                                            "name": "objType",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "流域",
+                                                        "value": "BAS"
+                                                    },
+                                                    {
+                                                        "label": "河流",
+                                                        "value": "RV"
+                                                    },
+                                                    {
+                                                        "label": "水库",
+                                                        "value": "RES"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "对象子类型",
+                                            "name": "subType"
+                                        },
+                                        {
+                                            "title": "行政区代码",
+                                            "name": "adCode"
+                                        },
+                                        {
+                                            "title": "显示级别",
+                                            "name": "showLevel"
+                                        },
+                                        {
+                                            "title": "数据来源",
+                                            "name": "dataOrigin",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "水利对象基础库",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "一张图",
+                                                        "value": "2"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "管理单位",
+                                            "name": "riunCode"
+                                        },
+                                        {
+                                            "title": "名录比照结果标识",
+                                            "name": "specificFlag"
+                                        },
+                                        {
+                                            "title": "监测代码",
+                                            "name": "monitorCode"
+                                        },
+                                        {
+                                            "title": "水文监测站代码",
+                                            "name": "stCode"
+                                        },
+                                        {
+                                            "title": "水文监测站名称",
+                                            "name": "stName"
+                                        },
+                                        {
+                                            "title": "水文监测站类型",
+                                            "name": "stType"
+                                        },
+                                        {
+                                            "title": "水文监测站经度",
+                                            "name": "stLong"
+                                        },
+                                        {
+                                            "title": "水文监测站纬度",
+                                            "name": "stLat"
+                                        },
+                                        {
+                                            "title": "站址",
+                                            "name": "stLoc"
+                                        },
+                                        {
+                                            "title": "设站年月",
+                                            "name": "stYearMon"
+                                        },
+                                        {
+                                            "title": "始报年月",
+                                            "name": "begRepoYearMon"
+                                        },
+                                        {
+                                            "title": "岸别",
+                                            "name": "bank",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "左",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "右",
+                                                        "value": "2"
+                                                    },
+                                                    {
+                                                        "label": "不分",
+                                                        "value": "0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "监测站方位",
+                                            "name": "stDir"
+                                        },
+                                        {
+                                            "title": "集水面积(km2)",
+                                            "name": "catArea"
+                                        },
+                                        {
+                                            "title": "监测项目",
+                                            "name": "moniItnm"
+                                        },
+                                        {
+                                            "title": "基准基面名称",
+                                            "name": "dtmName"
+                                        },
+                                        {
+                                            "title": "基面高差",
+                                            "name": "dtmElev"
+                                        },
+                                        {
+                                            "title": "备注",
+                                            "name": "note"
+                                        },
+                                        {
+                                            "title": "记录生效时间",
+                                            "name": "effDate"
+                                        },
+                                        {
+                                            "title": "记录失效时间",
+                                            "name": "exprDate"
+                                        },
+                                        {
+                                            "title": "河流名称",
+                                            "name": "rvnm"
+                                        },
+                                        {
+                                            "title": "所在河流名称",
+                                            "name": "hnnm"
+                                        },
+                                        {
+                                            "title": "所在流域名称",
+                                            "name": "bsnm"
+                                        },
+                                        {
+                                            "title": "基面修正值",
+                                            "name": "dtpr"
+                                        },
+                                        {
+                                            "title": "报汛等级",
+                                            "name": "frgrd"
+                                        },
+                                        {
+                                            "title": "隶属行业单位",
+                                            "name": "atcunit"
+                                        },
+                                        {
+                                            "title": "交换管理单位",
+                                            "name": "locality"
+                                        },
+                                        {
+                                            "title": "信息管理单位",
+                                            "name": "admauth"
+                                        },
+                                        {
+                                            "title": "测站方位",
+                                            "name": "stazt"
+                                        },
+                                        {
+                                            "title": "至河口距离",
+                                            "name": "dstrvm"
+                                        },
+                                        {
+                                            "title": "集水面积",
+                                            "name": "drna"
+                                        },
+                                        {
+                                            "title": "拼音码",
+                                            "name": "phcd"
+                                        },
+                                        {
+                                            "title": "启用标志",
+                                            "name": "usfl"
+                                        },
+                                        {
+                                            "title": "是否删除",
+                                            "name": "isDel",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "是",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "否",
+                                                        "value": "0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "数据来源",
+                                            "name": "datasource",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "山洪灾害",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "常规报汛站",
+                                                        "value": "2"
+                                                    },
+                                                    {
+                                                        "label": "中小河流",
+                                                        "value": "3"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "是否山洪站",
+                                            "name": "isShanhong",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "是",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "否",
+                                                        "value": "0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "警戒水位",
+                                            "name": "alwtlv"
+                                        },
+                                        {
+                                            "title": "保证水位",
+                                            "name": "gnwtlv"
+                                        },
+                                        {
+                                            "title": "警戒流量",
+                                            "name": "alfl"
+                                        },
+                                        {
+                                            "title": "保证流量",
+                                            "name": "gnwtfl"
+                                        },
+                                        {
+                                            "title": "显示等级",
+                                            "name": "showLevel"
+                                        },
+                                        {
+                                            "title": "县代码",
+                                            "name": "c3"
+                                        },
+                                        {
+                                            "title": "县名称",
+                                            "name": "n3"
+                                        },
+                                        {
+                                            "title": "市代码",
+                                            "name": "c2"
+                                        },
+                                        {
+                                            "title": "市名称",
+                                            "name": "n2"
+                                        },
+                                        {
+                                            "title": "省代码",
+                                            "name": "c1"
+                                        },
+                                        {
+                                            "title": "省名称",
+                                            "name": "n1"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "swz.png",
+                        "title": "河道站",
+                        "metaId": "河道站信息",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "河道站信息",
+                                "viewParams": {
+                                    "headTitle": "河道站信息",
+                                    "fields": [
+                                        {
+                                            "title": "id",
+                                            "name": "id"
+                                        },
+                                        {
+                                            "title": "code",
+                                            "name": "code"
+                                        },
+                                        {
+                                            "title": "名称",
+                                            "name": "name"
+                                        },
+                                        {
+                                            "title": "纬度",
+                                            "name": "stLat"
+                                        },
+                                        {
+                                            "title": "经度",
+                                            "name": "stLong"
+                                        },
+                                        {
+                                            "title": "对象类型",
+                                            "name": "objType",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "流域",
+                                                        "value": "BAS"
+                                                    },
+                                                    {
+                                                        "label": "河流",
+                                                        "value": "RV"
+                                                    },
+                                                    {
+                                                        "label": "水库",
+                                                        "value": "RES"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "对象子类型",
+                                            "name": "subType"
+                                        },
+                                        {
+                                            "title": "行政区代码",
+                                            "name": "adCode"
+                                        },
+                                        {
+                                            "title": "显示级别",
+                                            "name": "showLevel"
+                                        },
+                                        {
+                                            "title": "数据来源",
+                                            "name": "dataOrigin",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "水利对象基础库",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "一张图",
+                                                        "value": "2"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "管理单位",
+                                            "name": "riunCode"
+                                        },
+                                        {
+                                            "title": "名录比照结果标识",
+                                            "name": "specificFlag"
+                                        },
+                                        {
+                                            "title": "监测代码",
+                                            "name": "monitorCode"
+                                        },
+                                        {
+                                            "title": "水文监测站代码",
+                                            "name": "stCode"
+                                        },
+                                        {
+                                            "title": "水文监测站名称",
+                                            "name": "stName"
+                                        },
+                                        {
+                                            "title": "水文监测站类型",
+                                            "name": "stType"
+                                        },
+                                        {
+                                            "title": "水文监测站经度",
+                                            "name": "stLong"
+                                        },
+                                        {
+                                            "title": "水文监测站纬度",
+                                            "name": "stLat"
+                                        },
+                                        {
+                                            "title": "站址",
+                                            "name": "stLoc"
+                                        },
+                                        {
+                                            "title": "设站年月",
+                                            "name": "stYearMon"
+                                        },
+                                        {
+                                            "title": "始报年月",
+                                            "name": "begRepoYearMon"
+                                        },
+                                        {
+                                            "title": "岸别",
+                                            "name": "bank",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "左",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "右",
+                                                        "value": "2"
+                                                    },
+                                                    {
+                                                        "label": "不分",
+                                                        "value": "0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "监测站方位",
+                                            "name": "stDir"
+                                        },
+                                        {
+                                            "title": "集水面积(km2)",
+                                            "name": "catArea"
+                                        },
+                                        {
+                                            "title": "监测项目",
+                                            "name": "moniItnm"
+                                        },
+                                        {
+                                            "title": "基准基面名称",
+                                            "name": "dtmName"
+                                        },
+                                        {
+                                            "title": "基面高差",
+                                            "name": "dtmElev"
+                                        },
+                                        {
+                                            "title": "备注",
+                                            "name": "note"
+                                        },
+                                        {
+                                            "title": "记录生效时间",
+                                            "name": "effDate"
+                                        },
+                                        {
+                                            "title": "记录失效时间",
+                                            "name": "exprDate"
+                                        },
+                                        {
+                                            "title": "河流名称",
+                                            "name": "rvnm"
+                                        },
+                                        {
+                                            "title": "所在河流名称",
+                                            "name": "hnnm"
+                                        },
+                                        {
+                                            "title": "所在流域名称",
+                                            "name": "bsnm"
+                                        },
+                                        {
+                                            "title": "基面修正值",
+                                            "name": "dtpr"
+                                        },
+                                        {
+                                            "title": "报汛等级",
+                                            "name": "frgrd"
+                                        },
+                                        {
+                                            "title": "隶属行业单位",
+                                            "name": "atcunit"
+                                        },
+                                        {
+                                            "title": "交换管理单位",
+                                            "name": "locality"
+                                        },
+                                        {
+                                            "title": "信息管理单位",
+                                            "name": "admauth"
+                                        },
+                                        {
+                                            "title": "测站方位",
+                                            "name": "stazt"
+                                        },
+                                        {
+                                            "title": "至河口距离",
+                                            "name": "dstrvm"
+                                        },
+                                        {
+                                            "title": "集水面积",
+                                            "name": "drna"
+                                        },
+                                        {
+                                            "title": "拼音码",
+                                            "name": "phcd"
+                                        },
+                                        {
+                                            "title": "启用标志",
+                                            "name": "usfl"
+                                        },
+                                        {
+                                            "title": "是否删除",
+                                            "name": "isDel",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "是",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "否",
+                                                        "value": "0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "数据来源",
+                                            "name": "datasource",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "山洪灾害",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "常规报汛站",
+                                                        "value": "2"
+                                                    },
+                                                    {
+                                                        "label": "中小河流",
+                                                        "value": "3"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "是否山洪站",
+                                            "name": "isShanhong",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "是",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "否",
+                                                        "value": "0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "警戒水位",
+                                            "name": "alwtlv"
+                                        },
+                                        {
+                                            "title": "保证水位",
+                                            "name": "gnwtlv"
+                                        },
+                                        {
+                                            "title": "警戒流量",
+                                            "name": "alfl"
+                                        },
+                                        {
+                                            "title": "保证流量",
+                                            "name": "gnwtfl"
+                                        },
+                                        {
+                                            "title": "显示等级",
+                                            "name": "showLevel"
+                                        },
+                                        {
+                                            "title": "县代码",
+                                            "name": "c3"
+                                        },
+                                        {
+                                            "title": "县名称",
+                                            "name": "n3"
+                                        },
+                                        {
+                                            "title": "市代码",
+                                            "name": "c2"
+                                        },
+                                        {
+                                            "title": "市名称",
+                                            "name": "n2"
+                                        },
+                                        {
+                                            "title": "省代码",
+                                            "name": "c1"
+                                        },
+                                        {
+                                            "title": "省名称",
+                                            "name": "n1"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "实时雨情",
+                        "metaId": "实时雨情",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "实时雨情",
+                                "viewParams": {
+                                    "headTitle": "实时雨情信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "objName"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "实时水情",
+                        "metaId": "实时水情",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "实时水情",
+                                "viewParams": {
+                                    "headTitle": "实时水情信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "objName"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "水库水情",
+                        "metaId": "水库水情",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水库水情",
+                                "viewParams": {
+                                    "headTitle": "水库水情信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "objName"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "hdsqgj.png",
+                        "title": "河道水情告警",
+                        "metaId": "河道水情告警",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "河道水情告警",
+                                "viewParams": {
+                                    "headTitle": "河道水情告警信息",
+                                    "fields": [
+                                        {
+                                            "name": "realValue",
+                                            "title": "实时水位"
+                                        },
+                                        {
+                                            "name": "wrz",
+                                            "title": "超警戒水位"
+                                        },
+                                        {
+                                            "name": "tm",
+                                            "title": "时间"
+                                        },
+                                        {
+                                            "name": "objCode",
+                                            "title": "对象代码"
+                                        },
+                                        {
+                                            "name": "latitude",
+                                            "title": "纬度"
+                                        },
+                                        {
+                                            "name": "grq",
+                                            "title": "保证流量"
+                                        },
+                                        {
+                                            "name": "realKey",
+                                            "title": "真实键"
+                                        },
+                                        {
+                                            "name": "infoPosition",
+                                            "title": "信息方位"
+                                        },
+                                        {
+                                            "name": "objName",
+                                            "title": "对象名称"
+                                        },
+                                        {
+                                            "name": "grz",
+                                            "title": "保证水位"
+                                        },
+                                        {
+                                            "name": "q",
+                                            "title": "流量(立方米每秒)"
+                                        },
+                                        {
+                                            "name": "stcd",
+                                            "title": "测站代码"
+                                        },
+                                        {
+                                            "name": "warnText",
+                                            "title": "警告文本"
+                                        },
+                                        {
+                                            "name": "wrq",
+                                            "title": "警戒流量"
+                                        },
+                                        {
+                                            "name": "angle",
+                                            "title": "角度"
+                                        },
+                                        {
+                                            "name": "z",
+                                            "title": "水位(m)"
+                                        },
+                                        {
+                                            "name": "longitude",
+                                            "title": "经度"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "skcxgj.png",
+                        "title": "水库超汛告警",
+                        "metaId": "水库超汛告警",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水库超汛告警",
+                                "viewParams": {
+                                    "headTitle": "水库超汛告警信息",
+                                    "fields": [
+                                        {
+                                            "name": "resCode",
+                                            "title": "水库编码"
+                                        },
+                                        {
+                                            "name": "fsltdz",
+                                            "title": "汛限水位"
+                                        },
+                                        {
+                                            "name": "warnZ",
+                                            "title": "告警时水位"
+                                        },
+                                        {
+                                            "name": "warnW",
+                                            "title": "告警时蓄水量"
+                                        },
+                                        {
+                                            "name": "htz",
+                                            "title": "最高库水位"
+                                        },
+                                        {
+                                            "name": "ofsltdzW",
+                                            "title": "汛限水位以上蓄水量"
+                                        },
+                                        {
+                                            "name": "ofsltdzTm",
+                                            "title": "超汛限水位时间"
+                                        },
+                                        {
+                                            "name": "ofsltdzLen",
+                                            "title": "超汛限水位时长"
+                                        },
+                                        {
+                                            "name": "htztm",
+                                            "title": "最高库水位出现时间"
+                                        },
+                                        {
+                                            "name": "modtime",
+                                            "title": "时间戳"
+                                        },
+                                        {
+                                            "name": "objCode",
+                                            "title": "代码"
+                                        },
+                                        {
+                                            "name": "objName",
+                                            "title": "名称"
+                                        },
+                                        {
+                                            "name": "latitude",
+                                            "title": "纬度"
+                                        },
+                                        {
+                                            "name": "longitude",
+                                            "title": "经度"
+                                        },
+                                        {
+                                            "name": "stcd",
+                                            "title": "测站代码"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "szygl.png",
+                "title": "水资源管理",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "qsk.png",
+                        "title": "取水监测计量",
+                        "metaId": "水量监测点信息",
+                        "default": true,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水量监测点信息",
+                                "viewParams": {
+                                    "headTitle": "取水口统计",
+                                    "fields": [
+                                        {
+                                            "title": "ID",
+                                            "name": "id"
+                                        },
+                                        {
+                                            "title": "代码",
+                                            "name": "code"
+                                        },
+                                        {
+                                            "title": "名称",
+                                            "name": "name"
+                                        },
+                                        {
+                                            "title": "纬度",
+                                            "name": "latitude"
+                                        },
+                                        {
+                                            "title": "经度",
+                                            "name": "longitude"
+                                        },
+                                        {
+                                            "title": "对象类型",
+                                            "name": "objType",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "流域",
+                                                        "value": "BAS"
+                                                    },
+                                                    {
+                                                        "label": "河流",
+                                                        "value": "RV"
+                                                    },
+                                                    {
+                                                        "label": "水库",
+                                                        "value": "RES"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "对象子类型",
+                                            "name": "subType"
+                                        },
+                                        {
+                                            "title": "行政区代码",
+                                            "name": "adCode"
+                                        },
+                                        {
+                                            "title": "显示级别",
+                                            "name": "showLevel"
+                                        },
+                                        {
+                                            "title": "数据来源",
+                                            "name": "dataOrigin",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "水利对象基础库",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "一张图",
+                                                        "value": "2"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "管理单位",
+                                            "name": "riunCode"
+                                        },
+                                        {
+                                            "title": "名录比照结果标识",
+                                            "name": "specificFlag"
+                                        },
+                                        {
+                                            "title": "监测代码",
+                                            "name": "monitorCode"
+                                        },
+                                        {
+                                            "title": "水量监测点代码",
+                                            "name": "wvstCode"
+                                        },
+                                        {
+                                            "title": "水量监测点名称",
+                                            "name": "wvstName"
+                                        },
+                                        {
+                                            "title": "水量监测点类型",
+                                            "name": "wvstType"
+                                        },
+                                        {
+                                            "title": "水量监测点经度",
+                                            "name": "wvstLong"
+                                        },
+                                        {
+                                            "title": "水量监测点纬度",
+                                            "name": "wvstLat"
+                                        },
+                                        {
+                                            "title": "站址",
+                                            "name": "wvstLoc"
+                                        },
+                                        {
+                                            "title": "设站年月",
+                                            "name": "stYearMon"
+                                        },
+                                        {
+                                            "title": "始报年月",
+                                            "name": "begRepoYearMon"
+                                        },
+                                        {
+                                            "title": "监测方式",
+                                            "name": "moniMode"
+                                        },
+                                        {
+                                            "title": "水源类型",
+                                            "name": "wasoType"
+                                        },
+                                        {
+                                            "title": "取水特征类型",
+                                            "name": "wainFeaType"
+                                        },
+                                        {
+                                            "title": "取水用途",
+                                            "name": "wainUse"
+                                        },
+                                        {
+                                            "title": "监测点等级",
+                                            "name": "wvstGrad"
+                                        },
+                                        {
+                                            "title": "备注",
+                                            "name": "note"
+                                        },
+                                        {
+                                            "title": "记录生效时间",
+                                            "name": "effDate"
+                                        },
+                                        {
+                                            "title": "记录失效时间",
+                                            "name": "exprDate"
+                                        },
+                                        {
+                                            "title": "数据提供单位代码",
+                                            "name": "sourceDataUnitcode"
+                                        },
+                                        {
+                                            "title": "数据提供单位名称",
+                                            "name": "sourceDataUnitname"
+                                        },
+                                        {
+                                            "title": "地州来源",
+                                            "name": "datasource"
+                                        },
+                                        {
+                                            "title": "地州来源",
+                                            "name": "datasource"
+                                        },
+                                        {
+                                            "title": "是否自动",
+                                            "name": "awOrMw",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "自动",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "手动",
+                                                        "value": "2"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "地址自建或国控",
+                                            "name": "wvstOrGk",
+                                            "domain": {
+                                                "type": "dict",
+                                                "values": [
+                                                    {
+                                                        "label": "地州自建",
+                                                        "value": "1"
+                                                    },
+                                                    {
+                                                        "label": "国控",
+                                                        "value": "2"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "title": "修正编码前MS004",
+                                            "name": "wvstCodems004"
+                                        },
+                                        {
+                                            "title": "县代码",
+                                            "name": "c3"
+                                        },
+                                        {
+                                            "title": "县名称",
+                                            "name": "n3"
+                                        },
+                                        {
+                                            "title": "市代码",
+                                            "name": "c2"
+                                        },
+                                        {
+                                            "title": "市名称",
+                                            "name": "n2"
+                                        },
+                                        {
+                                            "title": "省代码",
+                                            "name": "c1"
+                                        },
+                                        {
+                                            "title": "省名称",
+                                            "name": "n1"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "区域用水总量",
+                        "metaId": "",
+                        "filter": [],
+                        "charts": [],
+                        "childs": [
+                            {
+                                "icon": "",
+                                "title": "月",
+                                "legend": "",
+                                "metaId": "区域用水总量(月)",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 123,
+                                        "chartType": "Table",
+                                        "metaId": "区域用水总量(月)",
+                                        "viewParams": {
+                                            "headTitle": "",
+                                            "fields": [
+                                                {
+                                                    "title": "名称",
+                                                    "name": "adAbbrName"
+                                                },
+                                                {
+                                                    "title": "实际用水量(m³)",
+                                                    "name": "fwqtA"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "icon": "",
+                                "title": "年",
+                                "legend": "",
+                                "metaId": "区域用水总量(年)",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 123,
+                                        "chartType": "Table",
+                                        "metaId": "区域用水总量(年)",
+                                        "viewParams": {
+                                            "headTitle": "",
+                                            "fields": [
+                                                {
+                                                    "title": "名称",
+                                                    "name": "adAbbrName"
+                                                },
+                                                {
+                                                    "title": "实际用水量(m³)",
+                                                    "name": "fwqtA"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "icon": "",
+                                "title": "",
+                                "legend": "",
+                                "metaId": "",
+                                "childs": [],
+                                "charts": []
+                            },
+                            {
+                                "icon": "",
+                                "title": "总量",
+                                "legend": "",
+                                "metaId": "区域用水总量(总量)",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 123,
+                                        "chartType": "Table",
+                                        "metaId": "区域用水总量(总量)",
+                                        "viewParams": {
+                                            "headTitle": "",
+                                            "fields": [
+                                                {
+                                                    "title": "名称",
+                                                    "name": "adAbbrName"
+                                                },
+                                                {
+                                                    "title": "实际用水量(m³)",
+                                                    "name": "fwqtA"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "icon": "",
+                                "title": "地表水",
+                                "legend": "",
+                                "metaId": "区域用水总量(地表水)",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 123,
+                                        "chartType": "Table",
+                                        "metaId": "区域用水总量(地表水)",
+                                        "viewParams": {
+                                            "headTitle": "",
+                                            "fields": [
+                                                {
+                                                    "title": "名称",
+                                                    "name": "adAbbrName"
+                                                },
+                                                {
+                                                    "title": "实际用水量(m³)",
+                                                    "name": "fwqtA"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "icon": "",
+                                "title": "地下水",
+                                "legend": "",
+                                "metaId": "区域用水总量(地下水)",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 123,
+                                        "chartType": "Table",
+                                        "metaId": "区域用水总量(地下水)",
+                                        "viewParams": {
+                                            "headTitle": "",
+                                            "fields": [
+                                                {
+                                                    "title": "名称",
+                                                    "name": "adAbbrName"
+                                                },
+                                                {
+                                                    "title": "实际用水量(m³)",
+                                                    "name": "fwqtA"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "gcyxgl.png",
+                "title": "工程运行管理",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "dbaq.png",
+                        "title": "大坝安全监测",
+                        "metaId": "大坝安全监测点信息",
+                        "default": true,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "大坝安全监测点信息",
+                                "viewParams": {
+                                    "headTitle": "大坝安全监测点信息",
+                                    "fields": [
+                                        {
+                                            "title": "大坝安全监测名称",
+                                            "name": "resName"
+                                        },
+                                        {
+                                            "title": "行政区划",
+                                            "name": "行政区划"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "gqgl.png",
+                "title": "灌区管理",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "gqm.png",
+                        "title": "灌区面",
+                        "metaId": "灌区面",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "灌区面",
+                                "viewParams": {
+                                    "headTitle": "灌区分布",
+                                    "fields": [
+                                        {
+                                            "title": "灌区名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "行政区划",
+                                            "name": "AD_NAME"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "gq.png",
+                        "title": "灌区",
+                        "metaId": "灌区",
+                        "filter": [
+                            {
+                                "attr": "",
+                                "childs": [
+                                    {
+                                        "label": "大中型",
+                                        "value": "大中型"
+                                    },
+                                    {
+                                        "label": "规模以上",
+                                        "value": "规模以上"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "灌区面",
+                                "viewParams": {
+                                    "headTitle": "灌区分布",
+                                    "fields": [
+                                        {
+                                            "title": "灌区名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "行政区划",
+                                            "name": "AD_NAME"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "灌区取用水量",
+                        "metaId": "灌区取用水量",
+                        "filter": [
+                            {
+                                "attr": "",
+                                "childs": [
+                                    {
+                                        "label": "大中型",
+                                        "value": "大中型",
+                                        "default": true
+                                    },
+                                    {
+                                        "label": "规模以上",
+                                        "value": "规模以上"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "",
+                                "childs": [
+                                    {
+                                        "label": "月",
+                                        "value": "月"
+                                    },
+                                    {
+                                        "label": "年",
+                                        "value": "年"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "灌区面",
+                                "viewParams": {
+                                    "headTitle": "灌区分布",
+                                    "fields": [
+                                        {
+                                            "title": "灌区名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "行政区划",
+                                            "name": "AD_NAME"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "ncyysaq.png",
+                "title": "农村饮水安全",
+                "legend": "",
+                "childs": [],
+                "charts": []
+            },
+            {
+                "icon": "zxzt.png",
+                "title": "在线制图",
+                "legend": "",
+                "childs": [],
+                "charts": []
+            },
+            {
+                "icon": "sjgx.png",
+                "title": "数据共享",
+                "legend": "",
+                "childs": [],
+                "charts": []
+            }
+        ]
+    }
+}

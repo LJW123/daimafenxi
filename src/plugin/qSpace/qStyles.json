@@ -1,0 +1,2088 @@
+{
+  "layer": ["fill", "line", "symbol", "circle", "fill-extrusion"],
+  "layout": [
+    "layout_fill",
+    "layout_line",
+    "layout_circle",
+    "layout_fill-extrusion",
+    "layout_symbol"
+  ],
+  "paint": [
+    "paint_fill",
+    "paint_line",
+    "paint_circle",
+    "paint_fill-extrusion",
+    "paint_symbol"
+  ],
+  "layout_circle": {
+    "_minzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 0,
+      "doc": "最小显示级别"
+    },
+    "_maxzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 24,
+      "doc": "最大显示级别"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_circle": {
+    "circle-radius": {
+      "type": "number",
+      "default": 3,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "半径",
+      "property-type": "data-driven"
+    },
+    "circle-color": {
+      "type": "color",
+      "default": "#3bb2d0",
+      "doc": "颜色",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "circle-opacity": {
+      "type": "number",
+      "doc": "不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "circle-blur": {
+      "type": "number",
+      "default": 0,
+      "doc": "模糊度",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "circle-stroke-width": {
+      "type": "number",
+      "default": 3,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "轮廓宽",
+      "property-type": "data-driven"
+    },
+    "circle-stroke-color": {
+      "type": "color",
+      "default": "#ffffff",
+      "doc": "轮廓颜色",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "circle-stroke-opacity": {
+      "type": "number",
+      "doc": "轮廓不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "circle-pitch-alignment": {
+      "type": "enum",
+      "values": {
+        "map": {
+          "doc": "地图"
+        },
+        "viewport": {
+          "doc": "视口"
+        }
+      },
+      "default": "viewport",
+      "doc": "方向",
+      "property-type": "data-constant"
+    }
+  },
+  "layout_line": {
+    "_line-style-type": {
+      "type": "enum",
+      "values": {
+        "default": {
+          "doc": "默认"
+        },
+        "fluxion": {
+          "doc": "流动"
+        }
+      },
+      "default": "default",
+      "doc": "样式",
+      "property-type": "data-constant"
+    },
+    "_line-style-direction": {
+      "type": "enum",
+      "values": {
+        "left": {
+          "doc": "正"
+        },
+        "right": {
+          "doc": "反"
+        }
+      },
+      "default": "left",
+      "doc": "流向",
+      "requires": [
+        {
+          "_line-style-type": "fluxion"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "line-cap": {
+      "type": "enum",
+      "values": {
+        "butt": {
+          "doc": "平角"
+        },
+        "round": {
+          "doc": "圆角"
+        },
+        "square": {
+          "doc": "线外平角"
+        }
+      },
+      "default": "round",
+      "doc": "线帽",
+      "property-type": "data-driven"
+    },
+    "line-join": {
+      "type": "enum",
+      "values": {
+        "bevel": {
+          "doc": "平角"
+        },
+        "round": {
+          "doc": "圆角"
+        },
+        "miter": {
+          "doc": "锐角"
+        }
+      },
+      "default": "round",
+      "doc": "连接点",
+      "property-type": "data-driven"
+    },
+    "line-miter-limit": {
+      "type": "number",
+      "default": 2,
+      "doc": "连接点角度",
+      "requires": [
+        {
+          "line-join": "miter"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "line-round-limit": {
+      "type": "number",
+      "default": 1.05,
+      "doc": "连接点弧度",
+      "requires": [
+        {
+          "line-join": "round"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "_minzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 0,
+      "doc": "最小显示级别"
+    },
+    "_maxzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 24,
+      "doc": "最大显示级别"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_line": {
+    "line-color": {
+      "type": "color",
+      "doc": "颜色",
+      "default": "#3bb2d0",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "line-opacity": {
+      "type": "number",
+      "doc": "不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "line-width": {
+      "type": "number",
+      "default": 2,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "线宽",
+      "property-type": "data-driven"
+    },
+    "line-gap-width": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "doc": "线套宽",
+      "transition": true,
+      "units": "pixels",
+      "property-type": "data-driven"
+    },
+    "line-blur": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "模糊度",
+      "property-type": "data-driven"
+    },
+    "line-dasharray": {
+      "type": "number",
+      "doc": "虚线长度",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "line widths",
+      "property-type": "cross-faded-data-driven"
+    },
+    "_line-dasharray-interval": {
+      "type": "number",
+      "doc": "虚线间隔长度",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "line widths",
+      "property-type": "cross-faded-data-driven"
+    }
+  },
+  "layout_three_line": {
+    "line-cap": {
+      "type": "enum",
+      "values": {
+        "butt": {
+          "doc": "平角"
+        },
+        "round": {
+          "doc": "圆角"
+        },
+        "square": {
+          "doc": "线外平角"
+        }
+      },
+      "default": "round",
+      "doc": "线帽",
+      "property-type": "data-driven"
+    },
+    "line-join": {
+      "type": "enum",
+      "values": {
+        "bevel": {
+          "doc": "平角"
+        },
+        "round": {
+          "doc": "圆角"
+        },
+        "miter": {
+          "doc": "锐角"
+        }
+      },
+      "default": "round",
+      "doc": "连接点",
+      "property-type": "data-driven"
+    },
+    "line-miter-limit": {
+      "type": "number",
+      "default": 2,
+      "doc": "连接点角度",
+      "requires": [
+        {
+          "line-join": "miter"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "line-round-limit": {
+      "type": "number",
+      "default": 1.05,
+      "doc": "连接点弧度",
+      "requires": [
+        {
+          "line-join": "round"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_three_line": {
+    "line-color": {
+      "type": "color",
+      "doc": "颜色",
+      "default": "#3bb2d0",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "line-opacity": {
+      "type": "number",
+      "doc": "不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "line-width": {
+      "type": "number",
+      "default": 2,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "线宽",
+      "property-type": "data-driven"
+    }
+  },
+  "layout_fill": {
+    "_minzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 0,
+      "doc": "最小显示级别"
+    },
+    "_maxzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 24,
+      "doc": "最大显示级别"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_fill": {
+    "fill-color": {
+      "type": "color",
+      "default": "#3bb2d0",
+      "doc": "填充颜色",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "fill-opacity": {
+      "type": "number",
+      "default": 0.3,
+      "minimum": 0,
+      "maximum": 1,
+      "doc": "不透明度",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "line-color": {
+      "type": "color",
+      "default": "#3bb2d0",
+      "doc": "轮廓颜色",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "line-opacity": {
+      "type": "number",
+      "doc": "轮廓不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "line-width": {
+      "type": "number",
+      "default": 2,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "轮廓宽",
+      "property-type": "data-driven"
+    }
+  },
+  "layout_fill-extrusion": {
+    "_minzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 0,
+      "doc": "最小显示级别"
+    },
+    "_maxzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 24,
+      "doc": "最大显示级别"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_fill-extrusion": {
+    "fill-extrusion-color": {
+      "type": "color",
+      "default": "#3bb2d0",
+      "doc": "填充颜色",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "fill-extrusion-opacity": {
+      "type": "number",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "doc": "不透明度",
+      "transition": true,
+      "property-type": "data-constant"
+    },
+    "fill-extrusion-height": {
+      "type": "number",
+      "default": 100,
+      "minimum": 0,
+      "units": "meters",
+      "doc": "挤压高度",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "fill-extrusion-base": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "units": "meters",
+      "doc": "底部高度",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "fill-extrusion-ambient-occlusion-intensity": {
+      "property-type": "data-constant",
+      "type": "number",
+      "private": true,
+      "default": 0.0,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "doc": "阴影强度"
+    },
+    "fill-extrusion-ambient-occlusion-radius": {
+      "property-type": "data-constant",
+      "type": "number",
+      "private": true,
+      "default": 3.0,
+      "minimum": 0,
+      "transition": true,
+      "doc": "阴影大小"
+    }
+  },
+  "layout_symbol_icon": {
+    "icon-size": {
+      "type": "number",
+      "default": 0.4,
+      "minimum": 0,
+      "units": "factor of the original icon size",
+      "doc": "图标大小(数值*100)",
+      "property-type": "data-driven"
+    },
+    "icon-rotate": {
+      "type": "number",
+      "default": 0,
+      "period": 360,
+      "units": "度",
+      "doc": "图标旋转",
+      "property-type": "data-driven"
+    },
+    "icon-allow-overlap": {
+      "type": "boolean",
+      "default": false,
+      "doc": "图标碰撞自身可见",
+      "property-type": "data-constant"
+    },
+    "icon-ignore-placement": {
+      "type": "boolean",
+      "default": false,
+      "doc": "图标碰撞其他可见",
+      "property-type": "data-constant"
+    },
+    "icon-offset-right": {
+      "type": "number",
+      "default": 0,
+      "doc": "图标向右偏移",
+      "property-type": "data-driven"
+    },
+    "icon-offset-bottom": {
+      "type": "number",
+      "default": 0,
+      "doc": "图标向下偏移",
+      "property-type": "data-driven"
+    },
+    "icon-anchor": {
+      "type": "enum",
+      "values": {
+        "center": {
+          "doc": "中心"
+        },
+        "left": {
+          "doc": "左"
+        },
+        "right": {
+          "doc": "右"
+        },
+        "top": {
+          "doc": "上"
+        },
+        "bottom": {
+          "doc": "下"
+        },
+        "top-left": {
+          "doc": "左上"
+        },
+        "top-right": {
+          "doc": "右上"
+        },
+        "bottom-left": {
+          "doc": "左下"
+        },
+        "bottom-right": {
+          "doc": "右下"
+        }
+      },
+      "default": "center",
+      "doc": "图标相对位置",
+      "property-type": "data-driven"
+    },
+    "icon-pitch-alignment": {
+      "type": "enum",
+      "values": {
+        "map": {
+          "doc": "地图"
+        },
+        "viewport": {
+          "doc": "视口"
+        },
+        "auto": {
+          "doc": "自动"
+        }
+      },
+      "default": "auto",
+      "doc": "图标方向",
+      "property-type": "data-constant"
+    },
+    "_minzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 0,
+      "doc": "最小显示级别"
+    },
+    "_maxzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 24,
+      "doc": "最大显示级别"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_symbol_icon": {
+    "icon-opacity": {
+      "doc": "图标不透明度",
+      "type": "number",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    }
+  },
+  "layout_symbol_icon_military": {
+    "icon-size": {
+      "type": "number",
+      "default": 1,
+      "minimum": 0,
+      "units": "factor of the original icon size",
+      "doc": "图标大小(数值*100)",
+      "property-type": "data-driven"
+    },
+    "icon-rotate": {
+      "type": "number",
+      "default": 0,
+      "period": 360,
+      "units": "度",
+      "doc": "图标旋转",
+      "property-type": "data-driven"
+    },
+    "icon-allow-overlap": {
+      "type": "boolean",
+      "default": false,
+      "doc": "图标碰撞自身可见",
+      "property-type": "data-constant"
+    },
+    "icon-ignore-placement": {
+      "type": "boolean",
+      "default": false,
+      "doc": "图标碰撞其他可见",
+      "property-type": "data-constant"
+    },
+    "icon-offset-right": {
+      "type": "number",
+      "default": 0,
+      "doc": "图标向右偏移",
+      "property-type": "data-driven"
+    },
+    "icon-offset-bottom": {
+      "type": "number",
+      "default": 0,
+      "doc": "图标向下偏移",
+      "property-type": "data-driven"
+    },
+    "icon-anchor": {
+      "type": "enum",
+      "values": {
+        "center": {
+          "doc": "中心"
+        },
+        "left": {
+          "doc": "左"
+        },
+        "right": {
+          "doc": "右"
+        },
+        "top": {
+          "doc": "上"
+        },
+        "bottom": {
+          "doc": "下"
+        },
+        "top-left": {
+          "doc": "左上"
+        },
+        "top-right": {
+          "doc": "右上"
+        },
+        "bottom-left": {
+          "doc": "左下"
+        },
+        "bottom-right": {
+          "doc": "右下"
+        }
+      },
+      "default": "center",
+      "doc": "图标相对位置",
+      "property-type": "data-driven"
+    },
+    "icon-pitch-alignment": {
+      "type": "enum",
+      "values": {
+        "map": {
+          "doc": "地图"
+        },
+        "viewport": {
+          "doc": "视口"
+        },
+        "auto": {
+          "doc": "自动"
+        }
+      },
+      "default": "auto",
+      "doc": "图标方向",
+      "property-type": "data-constant"
+    },
+    "_minzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 0,
+      "doc": "最小显示级别"
+    },
+    "_maxzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 24,
+      "doc": "最大显示级别"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_symbol_icon_military": {
+    "icon-color": {
+      "type": "color",
+      "default": "#ff0000",
+      "transition": true,
+      "doc": "图标颜色",
+      "property-type": "data-driven"
+    },
+    "icon-opacity": {
+      "doc": "图标不透明度",
+      "type": "number",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "icon-halo-color": {
+      "type": "color",
+      "default": "#000000",
+      "transition": true,
+      "doc": "图标光晕颜色",
+      "property-type": "data-driven"
+    },
+    "icon-halo-width": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "图标光晕宽度",
+      "property-type": "data-driven"
+    },
+    "icon-halo-blur": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "图标光晕距离",
+      "property-type": "data-driven"
+    }
+  },
+  "layout_symbol_icon_dynamic": {
+    "icon-size": {
+      "type": "number",
+      "default": 0.8,
+      "minimum": 0,
+      "units": "factor of the original icon size",
+      "doc": "图标大小(数值*100)",
+      "property-type": "data-driven"
+    },
+    "icon-allow-overlap": {
+      "type": "boolean",
+      "default": false,
+      "doc": "图标碰撞自身可见",
+      "property-type": "data-constant"
+    },
+    "icon-ignore-placement": {
+      "type": "boolean",
+      "default": false,
+      "doc": "图标碰撞其他可见",
+      "property-type": "data-constant"
+    },
+    "icon-pitch-alignment": {
+      "type": "enum",
+      "values": {
+        "map": {
+          "doc": "地图"
+        },
+        "viewport": {
+          "doc": "视口"
+        },
+        "auto": {
+          "doc": "自动"
+        }
+      },
+      "default": "auto",
+      "doc": "图标方向",
+      "property-type": "data-constant"
+    },
+    "_minzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 0,
+      "doc": "最小显示级别"
+    },
+    "_maxzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 24,
+      "doc": "最大显示级别"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_symbol_icon_dynamic": {
+    "_icon-color": {
+      "type": "color",
+      "default": "#ff0000",
+      "transition": true,
+      "doc": "填充颜色",
+      "property-type": "data-driven"
+    },
+    "_icon-outline-color": {
+      "type": "color",
+      "default": "#ADFF2F",
+      "transition": true,
+      "doc": "波颜色",
+      "property-type": "data-driven"
+    },
+    "icon-opacity": {
+      "doc": "不透明度",
+      "type": "number",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    }
+  },
+  "layout_line_dynamic": {
+    "line-cap": {
+      "type": "enum",
+      "values": {
+        "butt": {
+          "doc": "平角"
+        },
+        "round": {
+          "doc": "圆角"
+        },
+        "square": {
+          "doc": "线外平角"
+        }
+      },
+      "default": "round",
+      "doc": "线帽",
+      "property-type": "data-driven"
+    },
+    "line-join": {
+      "type": "enum",
+      "values": {
+        "bevel": {
+          "doc": "平角"
+        },
+        "round": {
+          "doc": "圆角"
+        },
+        "miter": {
+          "doc": "锐角"
+        }
+      },
+      "default": "round",
+      "doc": "连接点",
+      "property-type": "data-driven"
+    },
+    "line-miter-limit": {
+      "type": "number",
+      "default": 2,
+      "doc": "连接点角度",
+      "requires": [
+        {
+          "line-join": "miter"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "line-round-limit": {
+      "type": "number",
+      "default": 1.05,
+      "doc": "连接点弧度",
+      "requires": [
+        {
+          "line-join": "round"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "_minzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 0,
+      "doc": "最小显示级别"
+    },
+    "_maxzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 24,
+      "doc": "最大显示级别"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_line_dynamic": {
+    "_line-color": {
+      "type": "color",
+      "doc": "颜色1",
+      "default": "#3bb2d0",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "_line-opacity": {
+      "type": "number",
+      "doc": "不透明度1",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "_line-outline-color": {
+      "type": "color",
+      "doc": "颜色2",
+      "default": "#ff0000",
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "_line-outline-opacity": {
+      "type": "number",
+      "doc": "不透明度2",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "line-width": {
+      "type": "number",
+      "default": 2,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "线宽",
+      "property-type": "data-driven"
+    },
+    "line-gap-width": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "doc": "线套宽",
+      "transition": true,
+      "units": "pixels",
+      "property-type": "data-driven"
+    },
+    "line-blur": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "模糊度",
+      "property-type": "data-driven"
+    },
+    "line-dasharray": {
+      "type": "number",
+      "doc": "虚线间隔",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "line widths",
+      "property-type": "cross-faded-data-driven"
+    }
+  },
+  "layout_symbol_model": {
+    "_model-scale": {
+      "type": "number",
+      "default": 11,
+      "minimum": 0,
+      "doc": "比例",
+      "property-type": "data-driven"
+    },
+    "_model-height": {
+      "type": "number",
+      "default": 10,
+      "minimum": 0,
+      "doc": "离地高度",
+      "property-type": "data-driven"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_symbol_model": {},
+  "layout_symbol_text": {
+    "text-field": {
+      "type": "formatted",
+      "default": "标签",
+      "tokens": true,
+      "doc": "文本值",
+      "property-type": "data-driven"
+    },
+    "text-font": {
+      "type": "enum",
+      "values": {
+        "arial": {
+          "doc": "arial"
+        },
+        "arialbd": {
+          "doc": "arial粗体"
+        },
+        "arialbi": {
+          "doc": "arial斜体"
+        },
+        "Microsoft YaHei": {
+          "doc": "微软雅黑"
+        },
+        "Microsoft YaHei BD": {
+          "doc": "微软雅黑粗体"
+        },
+        "Microsoft YaHei L": {
+          "doc": "微软雅黑斜体"
+        },
+        "simhei": {
+          "doc": "黑体"
+        },
+        "simkai": {
+          "doc": "楷体"
+        },
+        "simsun": {
+          "doc": "宋体"
+        }
+      },
+      "default": "Microsoft YaHei BD",
+      "doc": "文本字体",
+      "property-type": "data-driven"
+    },
+    "text-size": {
+      "type": "number",
+      "default": 30,
+      "minimum": 0,
+      "units": "pixels",
+      "doc": "字体大小",
+      "property-type": "data-driven"
+    },
+    "text-max-width": {
+      "type": "number",
+      "default": 10,
+      "minimum": 0,
+      "units": "ems",
+      "doc": "文本最大行宽",
+      "property-type": "data-driven"
+    },
+    "text-line-height": {
+      "type": "number",
+      "default": 1.2,
+      "units": "ems",
+      "doc": "文本行高比",
+      "property-type": "data-driven"
+    },
+    "text-letter-spacing": {
+      "type": "number",
+      "default": 0,
+      "units": "ems",
+      "doc": "字间距",
+      "property-type": "data-driven"
+    },
+    "text-rotate": {
+      "type": "number",
+      "default": 0,
+      "period": 360,
+      "units": "degrees",
+      "doc": "文本旋转",
+      "property-type": "data-driven"
+    },
+    "text-allow-overlap": {
+      "type": "boolean",
+      "default": false,
+      "doc": "文本碰撞自身可见",
+      "property-type": "data-constant"
+    },
+    "text-ignore-placement": {
+      "type": "boolean",
+      "default": false,
+      "doc": "文本碰撞其他可见",
+      "property-type": "data-constant"
+    },
+    "text-justify": {
+      "type": "enum",
+      "values": {
+        "auto": {
+          "doc": "坐标位置"
+        },
+        "left": {
+          "doc": "左"
+        },
+        "center": {
+          "doc": "居中"
+        },
+        "right": {
+          "doc": "右"
+        }
+      },
+      "default": "center",
+      "doc": "文本对齐方向",
+      "property-type": "data-driven"
+    },
+    "text-anchor": {
+      "type": "enum",
+      "values": {
+        "center": {
+          "doc": "中心"
+        },
+        "left": {
+          "doc": "左"
+        },
+        "right": {
+          "doc": "右"
+        },
+        "top": {
+          "doc": "上"
+        },
+        "bottom": {
+          "doc": "下"
+        },
+        "top-left": {
+          "doc": "左上"
+        },
+        "top-right": {
+          "doc": "右上"
+        },
+        "bottom-left": {
+          "doc": "左下"
+        },
+        "bottom-right": {
+          "doc": "右下"
+        }
+      },
+      "default": "center",
+      "doc": "文本相对位置",
+      "property-type": "data-driven"
+    },
+    "text-pitch-alignment": {
+      "type": "enum",
+      "values": {
+        "map": {
+          "doc": "地图"
+        },
+        "viewport": {
+          "doc": "视口"
+        },
+        "auto": {
+          "doc": "自动"
+        }
+      },
+      "default": "auto",
+      "doc": "文本方向",
+      "property-type": "data-constant"
+    },
+    "_minzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 0,
+      "doc": "最小显示级别"
+    },
+    "_maxzoom": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 24,
+      "default": 24,
+      "doc": "最大显示级别"
+    },
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_symbol_text": {
+    "text-color": {
+      "type": "color",
+      "doc": "文本颜色",
+      "default": "#ADFF2F",
+      "transition": true,
+      "overridable": true,
+      "property-type": "data-driven"
+    },
+    "text-opacity": {
+      "type": "number",
+      "doc": "文本不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "text-halo-color": {
+      "type": "color",
+      "default": "#000000",
+      "transition": true,
+      "doc": "文本光晕颜色",
+      "property-type": "data-driven"
+    },
+    "text-halo-width": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "文本光晕宽度",
+      "property-type": "data-driven"
+    },
+    "text-halo-blur": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "文本光晕距离",
+      "property-type": "data-driven"
+    }
+  },
+  "layout_text": {
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "none",
+      "doc": "标签是否显示",
+      "property-type": "constant"
+    },
+    "_text-type": {
+      "type": "enum",
+      "values": {
+        "注记": {
+          "doc": "注记"
+        },
+        "标注": {
+          "doc": "标注"
+        },
+        "部件": {
+          "doc": "部件"
+        }
+      },
+      "default": "注记",
+      "doc": "标签类型",
+      "property-type": "data-constant"
+    },
+    "text-field": {
+      "type": "formatted",
+      "default": "",
+      "tokens": true,
+      "doc": "文本值",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["注记", "标注"]
+        }
+      ]
+    },
+    "_text-field2": {
+      "type": "formatted",
+      "default": "",
+      "doc": "内容",
+      "values": {},
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["标注"]
+        }
+      ]
+    },
+    "_text-field": {
+      "type": "assembly",
+      "default": "",
+      "doc": "部件",
+      "values": {},
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["部件"]
+        }
+      ]
+    },
+    "_text-template": {
+      "type": "template",
+      "default": "",
+      "doc": "标注模版",
+      "values": {},
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["标注"]
+        }
+      ]
+    },
+    "text-font": {
+      "type": "enum",
+      "values": {
+        "arial": {
+          "doc": "arial"
+        },
+        "arialbd": {
+          "doc": "arial粗体"
+        },
+        "arialbi": {
+          "doc": "arial斜体"
+        },
+        "Microsoft YaHei": {
+          "doc": "微软雅黑"
+        },
+        "Microsoft YaHei BD": {
+          "doc": "微软雅黑粗体"
+        },
+        "Microsoft YaHei L": {
+          "doc": "微软雅黑斜体"
+        },
+        "simhei": {
+          "doc": "黑体"
+        },
+        "simkai": {
+          "doc": "楷体"
+        },
+        "simsun": {
+          "doc": "宋体"
+        }
+      },
+      "default": "Microsoft YaHei BD",
+      "doc": "文本字体",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    },
+    "text-size": {
+      "type": "number",
+      "default": 16,
+      "minimum": 0,
+      "units": "pixels",
+      "doc": "字体大小",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["注记", "标注"]
+        }
+      ]
+    },
+    "_text-div-width": {
+      "type": "number",
+      "default": 100,
+      "minimum": 0,
+      "units": "px",
+      "doc": "文本容器宽",
+      "requires": [
+        {
+          "symbol-placement": "point"
+        },
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "_text-div-height": {
+      "type": "number",
+      "default": 100,
+      "minimum": 0,
+      "units": "px",
+      "doc": "文本容器高",
+      "requires": [
+        {
+          "symbol-placement": "point"
+        },
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "text-max-width": {
+      "type": "number",
+      "default": 10,
+      "minimum": 0,
+      "units": "ems",
+      "doc": "文本最大行宽",
+      "requires": [
+        {
+          "symbol-placement": "point"
+        },
+        {
+          "_text-type": "注记"
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "text-line-height": {
+      "type": "number",
+      "default": 1.2,
+      "units": "ems",
+      "doc": "文本行高比",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "text-letter-spacing": {
+      "type": "number",
+      "default": 0,
+      "units": "ems",
+      "doc": "字间距",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "text-rotate": {
+      "type": "number",
+      "default": 0,
+      "period": 360,
+      "units": "degrees",
+      "doc": "文本旋转",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "text-allow-overlap": {
+      "type": "boolean",
+      "default": false,
+      "doc": "文本碰撞自身可见",
+      "property-type": "data-constant",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    },
+    "text-ignore-placement": {
+      "type": "boolean",
+      "default": false,
+      "doc": "文本碰撞其他可见",
+      "property-type": "data-constant",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    },
+    "symbol-placement": {
+      "type": "enum",
+      "values": {
+        "point": {
+          "doc": "坐标"
+        },
+        "line": {
+          "doc": "沿线放置（只能用于线数据和面数据）"
+        },
+        "line-center": {
+          "doc": "几何中心（只能用于线数据和面数据）"
+        }
+      },
+      "default": "point",
+      "doc": "标签位置",
+      "property-type": "data-constant",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    },
+    "symbol-spacing": {
+      "type": "number",
+      "default": 250,
+      "minimum": 1,
+      "units": "pixels",
+      "doc": "标签间距",
+      "requires": [
+        {
+          "symbol-placement": "line"
+        },
+        {
+          "_text-type": "注记"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "text-offset-right": {
+      "type": "number",
+      "default": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "注记向右偏移",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "text-offset-bottom": {
+      "type": "number",
+      "default": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "注记向下偏移",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ],
+      "property-type": "data-constant"
+    },
+    "_text-bg-color": {
+      "type": "color",
+      "default": "#4d402d",
+      "transition": true,
+      "doc": "背景颜色",
+      "requires": [
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "_text-bg-opacity": {
+      "type": "number",
+      "doc": "背景不透明度",
+      "default": 0.5,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ]
+    },
+    "_text-border-color": {
+      "type": "color",
+      "default": "#ff0000",
+      "transition": true,
+      "doc": "背景框颜色",
+      "requires": [
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "_text-border-opacity": {
+      "type": "number",
+      "doc": "背景框不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ]
+    },
+    "_text-offset-right": {
+      "type": "number",
+      "default": 0,
+      "doc": "标注向右偏移",
+      "units": "pixels",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ]
+    },
+    "_text-offset-top": {
+      "type": "number",
+      "default": 100,
+      "doc": "标注向上偏移",
+      "units": "pixels",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ]
+    },
+    "_text-line-color": {
+      "type": "color",
+      "default": "#ff0000",
+      "transition": true,
+      "doc": "连杆颜色",
+      "requires": [
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "_text-line-opacity": {
+      "type": "number",
+      "doc": "连杆不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": ["标注", "部件"]
+        }
+      ]
+    },
+    "_text-bg-image": {
+      "type": "resolvedImage",
+      "default": "",
+      "transition": true,
+      "doc": "标注背景图片",
+      "requires": [
+        {
+          "_text-type": "标注"
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "_text-bg-audio": {
+      "type": "resolvedAudio",
+      "default": "",
+      "transition": true,
+      "doc": "音频",
+      "requires": [
+        {
+          "_text-type": "标注"
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "_text-bg-audio_play": {
+      "type": "boolean",
+      "default": "",
+      "transition": true,
+      "doc": "播放音频",
+      "requires": [
+        {
+          "_text-type": "标注"
+        }
+      ],
+      "property-type": "data-driven"
+    },
+    "text-justify": {
+      "type": "enum",
+      "values": {
+        "auto": {
+          "doc": "坐标位置"
+        },
+        "left": {
+          "doc": "左"
+        },
+        "center": {
+          "doc": "居中"
+        },
+        "right": {
+          "doc": "右"
+        }
+      },
+      "default": "center",
+      "doc": "文本对齐方向",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    },
+    "text-anchor": {
+      "type": "enum",
+      "values": {
+        "center": {
+          "doc": "中心"
+        },
+        "left": {
+          "doc": "左"
+        },
+        "right": {
+          "doc": "右"
+        },
+        "top": {
+          "doc": "上"
+        },
+        "bottom": {
+          "doc": "下"
+        },
+        "top-left": {
+          "doc": "左上"
+        },
+        "top-right": {
+          "doc": "右上"
+        },
+        "bottom-left": {
+          "doc": "左下"
+        },
+        "bottom-right": {
+          "doc": "右下"
+        }
+      },
+      "default": "center",
+      "doc": "文本相对位置",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    },
+    "text-pitch-alignment": {
+      "type": "enum",
+      "values": {
+        "map": {
+          "doc": "地图"
+        },
+        "viewport": {
+          "doc": "视口"
+        },
+        "auto": {
+          "doc": "自动"
+        }
+      },
+      "default": "auto",
+      "doc": "文本方向",
+      "property-type": "data-constant",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    }
+  },
+  "paint_text": {
+    "text-color": {
+      "type": "color",
+      "doc": "文本颜色",
+      "default": "#ffffff",
+      "transition": true,
+      "overridable": true,
+      "property-type": "data-driven"
+    },
+    "text-opacity": {
+      "type": "number",
+      "doc": "文本不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    },
+    "text-halo-color": {
+      "type": "color",
+      "default": "#000000",
+      "transition": true,
+      "doc": "文本光晕颜色",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    },
+    "text-halo-width": {
+      "type": "number",
+      "default": 2,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "文本光晕宽度",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    },
+    "text-halo-blur": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "transition": true,
+      "units": "pixels",
+      "doc": "文本光晕距离",
+      "property-type": "data-driven",
+      "requires": [
+        {
+          "_text-type": "注记"
+        }
+      ]
+    }
+  },
+  "layout_raster": {
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_raster": {
+    "raster-opacity": {
+      "type": "number",
+      "doc": "不透明度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-driven"
+    },
+    "raster-hue-rotate": {
+      "type": "number",
+      "default": 0,
+      "period": 360,
+      "transition": true,
+      "units": "degrees",
+      "doc": "围绕色轮旋转色调",
+      "property-type": "data-constant"
+    },
+    "raster-brightness-min": {
+      "type": "number",
+      "doc": "最小亮度",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-constant"
+    },
+    "raster-brightness-max": {
+      "type": "number",
+      "doc": "最大亮度",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-constant"
+    },
+    "raster-saturation": {
+      "type": "number",
+      "doc": "饱和度",
+      "default": 0,
+      "minimum": -1,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-constant"
+    },
+    "raster-contrast": {
+      "type": "number",
+      "doc": "对比度",
+      "default": 0,
+      "minimum": -1,
+      "maximum": 1,
+      "transition": true,
+      "property-type": "data-constant"
+    },
+    "raster-resampling": {
+      "type": "enum",
+      "doc": "采样方式",
+      "values": {
+        "linear": {
+          "doc": "线性"
+        },
+        "nearest": {
+          "doc": "最近的"
+        }
+      },
+      "default": "linear",
+      "property-type": "data-constant"
+    },
+    "raster-fade-duration": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "transition": false,
+      "units": "milliseconds",
+      "doc": "切换瓦片时的渐隐时间",
+      "property-type": "data-constant"
+    }
+  },
+  "layout_water": {
+    "visibility": {
+      "type": "enum",
+      "values": {
+        "visible": {
+          "doc": "显示"
+        },
+        "none": {
+          "doc": "隐藏"
+        }
+      },
+      "default": "visible",
+      "doc": "是否显示",
+      "property-type": "constant"
+    }
+  },
+  "paint_water": {
+    "fill-color": {
+      "type": "color",
+      "default": "#d48806",
+      "doc": "水颜色",
+      "transition": true,
+      "property-type": "data-driven"
+    }
+  }
+}

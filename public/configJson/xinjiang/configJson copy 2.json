@@ -1,0 +1,1496 @@
+{
+    "styleSchema": {
+        "mainPage": {
+            "bgImage": "homebg.png"
+        },
+        "headerPage": {
+            "bgImage": "header.png",
+            "style": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "height": 64,
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover"
+            }
+        },
+        "leftPage": {
+            "bgImage": "leftbg.png",
+            "titleImage": "left_title.png",
+            "style": {
+                "top": 40,
+                "left": 0,
+                "bottom": 40
+            }
+        },
+        "rightPage": {
+            "bgImage": "",
+            "style": {
+                "width": 400,
+                "top": 40,
+                "right": 0
+            }
+        }
+    },
+    "dataSchema": {
+        "pageDatas": [
+            {
+                "icon": "jcxx.png",
+                "title": "基础信息",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "hl.png",
+                        "title": "河流",
+                        "legend": "",
+                        "metaId": "",
+                        "childs": [
+                            {
+                                "icon": "hl.png",
+                                "title": "十亿以上径流量",
+                                "legend": "",
+                                "metaId": "10亿径流量河流(18)",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "10亿径流量河流(18)",
+                                        "viewParams": {
+                                            "headTitle": "10亿径流量河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "统计河",
+                                                    "name": "统计河"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "一级",
+                                "legend": "",
+                                "metaId": "零级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1796474573805120
+                                    },
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "零级河流",
+                                        "viewParams": {
+                                            "headTitle": "一级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "统计河",
+                                                    "name": "统计河"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "二级",
+                                "legend": "",
+                                "metaId": "一级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "一级河流",
+                                        "viewParams": {
+                                            "headTitle": "二级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "统计河",
+                                                    "name": "统计河"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "三级",
+                                "legend": "",
+                                "metaId": "二级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "二级河流",
+                                        "viewParams": {
+                                            "headTitle": "三级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "统计河",
+                                                    "name": "统计河"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "四级",
+                                "legend": "",
+                                "metaId": "三级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "三级河流",
+                                        "viewParams": {
+                                            "headTitle": "四级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "统计河",
+                                                    "name": "统计河"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "五级",
+                                "legend": "",
+                                "metaId": "四级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "四级河流",
+                                        "viewParams": {
+                                            "headTitle": "五级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "统计河",
+                                                    "name": "统计河"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            },
+                            {
+                                "icon": "hl.png",
+                                "title": "六级",
+                                "legend": "",
+                                "metaId": "五级河流",
+                                "childs": [],
+                                "charts": [
+                                    {
+                                        "chartViewId": 1786904199878208,
+                                        "chartType": "Table",
+                                        "metaId": "五级河流",
+                                        "viewParams": {
+                                            "headTitle": "六级河流",
+                                            "fields": [
+                                                {
+                                                    "title": "河流名称",
+                                                    "name": "NAME"
+                                                },
+                                                {
+                                                    "title": "统计河",
+                                                    "name": "统计河"
+                                                }
+                                            ]
+                                        },
+                                        "queryParams": {
+                                            "sType": "query",
+                                            "rType": "json",
+                                            "pageSize": 20,
+                                            "pageNum": 1
+                                        }
+                                    }
+                                ],
+                                "filter": []
+                            }
+                        ],
+                        "charts": [],
+                        "filter": []
+                    },
+                    {
+                        "icon": "hl.png",
+                        "title": "10亿径流量河流",
+                        "legend": "",
+                        "metaId": "10亿径流量河流(18)",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "10亿径流量河流(18)",
+                                "viewParams": {
+                                    "headTitle": "10亿径流量河流",
+                                    "fields": [
+                                        {
+                                            "title": "河流名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "统计河",
+                                            "name": "统计河"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "hl.png",
+                        "title": "一级河流",
+                        "legend": "",
+                        "metaId": "零级河流",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1796474573805120
+                            },
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "零级河流",
+                                "viewParams": {
+                                    "headTitle": "一级河流",
+                                    "fields": [
+                                        {
+                                            "title": "河流名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "统计河",
+                                            "name": "统计河"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ],
+                        "filter": []
+                    },
+                    {
+                        "icon": "hl.png",
+                        "title": "二级河流",
+                        "legend": "",
+                        "metaId": "一级河流",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "一级河流",
+                                "viewParams": {
+                                    "headTitle": "二级河流",
+                                    "fields": [
+                                        {
+                                            "title": "河流名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "统计河",
+                                            "name": "统计河"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ],
+                        "filter": []
+                    },
+                    {
+                        "icon": "hl.png",
+                        "title": "三级河流",
+                        "legend": "",
+                        "metaId": "二级河流",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "二级河流",
+                                "viewParams": {
+                                    "headTitle": "三级河流",
+                                    "fields": [
+                                        {
+                                            "title": "河流名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "统计河",
+                                            "name": "统计河"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ],
+                        "filter": []
+                    },
+                    {
+                        "icon": "hl.png",
+                        "title": "四级河流",
+                        "legend": "",
+                        "metaId": "三级河流",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "三级河流",
+                                "viewParams": {
+                                    "headTitle": "四级河流",
+                                    "fields": [
+                                        {
+                                            "title": "河流名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "统计河",
+                                            "name": "统计河"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ],
+                        "filter": []
+                    },
+                    {
+                        "icon": "hl.png",
+                        "title": "五级河流",
+                        "legend": "",
+                        "metaId": "四级河流",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "四级河流",
+                                "viewParams": {
+                                    "headTitle": "五级河流",
+                                    "fields": [
+                                        {
+                                            "title": "河流名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "统计河",
+                                            "name": "统计河"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ],
+                        "filter": []
+                    },
+                    {
+                        "icon": "hl.png",
+                        "title": "六级河流",
+                        "legend": "",
+                        "metaId": "五级河流",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "五级河流",
+                                "viewParams": {
+                                    "headTitle": "六级河流",
+                                    "fields": [
+                                        {
+                                            "title": "河流名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "统计河",
+                                            "name": "统计河"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ],
+                        "filter": []
+                    },
+                    {
+                        "icon": "hpm.png",
+                        "title": "湖泊面",
+                        "legend": "",
+                        "metaId": "湖泊",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "湖泊",
+                                "viewParams": {
+                                    "headTitle": "湖泊列表",
+                                    "fields": [
+                                        {
+                                            "title": "湖泊名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "级别",
+                                            "name": "OBJ_GRADE"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "skm.png",
+                        "title": "水库面",
+                        "legend": "",
+                        "metaId": "水库面",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水库面",
+                                "viewParams": {
+                                    "headTitle": "水库面列表",
+                                    "fields": [
+                                        {
+                                            "title": "水库名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "级别",
+                                            "name": "GRADE"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "sk.png",
+                        "title": "水库工程",
+                        "legend": "",
+                        "metaId": "水库工程",
+                        "childs": [],
+                        "charts": [
+                            {
+                                "chartViewId": null,
+                                "chartType": "Table",
+                                "metaId": "水库工程",
+                                "viewParams": {
+                                    "headTitle": "水库工程",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "name"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ],
+                        "filter": [
+                            {
+                                "attr": "engScal",
+                                "childs": [
+                                    {
+                                        "label": "大型",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "label": "中型",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "label": "小型",
+                                        "value": "3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "zsyx.png",
+                        "title": "正射影像（24）",
+                        "legend": "",
+                        "metaId": "",
+                        "childs": [],
+                        "charts": []
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "spdy.png",
+                "title": "视频调度",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "he.png",
+                        "title": "河流监控",
+                        "metaId": "重点河流监控点",
+                        "default": true,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "重点河流监控点",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "位置"
+                                        },
+                                        {
+                                            "title": "河流名",
+                                            "name": "河流名"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "hp.png",
+                        "title": "湖泊监控",
+                        "metaId": "重点湖泊监控点",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "重点湖泊监控点",
+                                "viewParams": {
+                                    "headTitle": "湖泊监控列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "所在位"
+                                        },
+                                        {
+                                            "title": "接入网",
+                                            "name": "接入网"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "hh.png",
+                        "title": "汇合口监控",
+                        "metaId": "重要干支流交汇口",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1786958395872832,
+                                "chartType": "Table",
+                                "metaId": "重要干支流交汇口",
+                                "viewParams": {
+                                    "headTitle": "汇合口监控列表",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "汇合点"
+                                        },
+                                        {
+                                            "title": "建设情况",
+                                            "name": "建设情"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "sk.png",
+                        "title": "水库工程监控",
+                        "metaId": "重点监控水库",
+                        "filter": [
+                            {
+                                "attr": "IS_MNTR",
+                                "childs": [
+                                    {
+                                        "label": "已建",
+                                        "value": "是",
+                                        "image": "水库监控绿",
+                                        "default": true
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "JR_SLT",
+                                "childs": [
+                                    {
+                                        "label": "已接入",
+                                        "value": "已接入",
+                                        "default": true
+                                    },
+                                    {
+                                        "label": "未接入",
+                                        "value": "未接入"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "IS_ONLINE",
+                                "childs": [
+                                    {
+                                        "label": "在线",
+                                        "value": "在线"
+                                    },
+                                    {
+                                        "label": "掉线",
+                                        "value": "离线"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796475383838272
+                            },
+                            {
+                                "chartViewId": 1786953251137088,
+                                "chartType": "Table",
+                                "metaId": "重点监控水库",
+                                "viewParams": {
+                                    "headTitle": "水库列表",
+                                    "fields": [
+                                        {
+                                            "title": "水库名称",
+                                            "name": "RES_NAME"
+                                        },
+                                        {
+                                            "title": "级别",
+                                            "name": "ENG_SCAL"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "szdx.png",
+                        "title": "取水口监控",
+                        "metaId": "重点监控取水口",
+                        "filter": [
+                            {
+                                "attr": "IS_MNTR",
+                                "childs": [
+                                    {
+                                        "label": "已建",
+                                        "value": "已建"
+                                    },
+                                    {
+                                        "label": "在建",
+                                        "value": "在建"
+                                    },
+                                    {
+                                        "label": "未建",
+                                        "value": "未建"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "JR_SLT",
+                                "childs": [
+                                    {
+                                        "label": "已接入",
+                                        "value": "已接入"
+                                    },
+                                    {
+                                        "label": "未接入",
+                                        "value": "未接入"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "IS_ONLINE",
+                                "childs": [
+                                    {
+                                        "label": "在线",
+                                        "value": "在线"
+                                    },
+                                    {
+                                        "label": "掉线",
+                                        "value": "掉线"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1786955355186752,
+                                "chartType": "Table",
+                                "metaId": "重点监控取水口",
+                                "viewParams": {
+                                    "headTitle": "取水口监控列表",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "WVST_NAME"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "swz.png",
+                        "title": "水文站监控",
+                        "metaId": "重点监控水文站",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1786954061383232,
+                                "chartType": "Table",
+                                "metaId": "重点监控水文站",
+                                "viewParams": {
+                                    "headTitle": "水文站监控列表",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "ST_NAME"
+                                        },
+                                        {
+                                            "title": "网络类型",
+                                            "name": "NET_TYPE"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "jian.png",
+                        "title": "在建工程监控",
+                        "metaId": "重点监控在建工程",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1788675891607104,
+                                "chartType": "Table",
+                                "metaId": "重点监控在建工程",
+                                "viewParams": {
+                                    "headTitle": "在建工程列表",
+                                    "fields": [
+                                        {
+                                            "title": "工程名",
+                                            "name": "工程名"
+                                        },
+                                        {
+                                            "title": "工程规格",
+                                            "name": "工程规"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "shzhfy.png",
+                "title": "水旱灾害防御",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "ylz.png",
+                        "title": "雨量站",
+                        "metaId": "雨量站信息",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "雨量站信息",
+                                "viewParams": {
+                                    "headTitle": "雨量站信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "name"
+                                        },
+                                        {
+                                            "title": "编码",
+                                            "name": "code"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "dxsk.png",
+                        "title": "水库站",
+                        "metaId": "水库站信息",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水库站信息",
+                                "viewParams": {
+                                    "headTitle": "水库站信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "name"
+                                        },
+                                        {
+                                            "title": "编码",
+                                            "name": "code"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "swz.png",
+                        "title": "河道站",
+                        "metaId": "河道站信息",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "河道站信息",
+                                "viewParams": {
+                                    "headTitle": "河道站信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "name"
+                                        },
+                                        {
+                                            "title": "编码",
+                                            "name": "code"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "实时雨情",
+                        "metaId": "实时雨情",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "实时雨情",
+                                "viewParams": {
+                                    "headTitle": "实时雨情信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "objName"
+                                        },
+                                        {
+                                            "title": "时间",
+                                            "name": "tm"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "实时水情",
+                        "metaId": "实时水情",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "实时水情",
+                                "viewParams": {
+                                    "headTitle": "实时水情信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "objName"
+                                        },
+                                        {
+                                            "title": "时间",
+                                            "name": "tm"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "水库水情",
+                        "metaId": "水库水情",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水库水情",
+                                "viewParams": {
+                                    "headTitle": "水库水情信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "objName"
+                                        },
+                                        {
+                                            "title": "时间",
+                                            "name": "tm"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "hdsqgj.png",
+                        "title": "河道水情告警",
+                        "metaId": "河道水情告警",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "河道水情告警",
+                                "viewParams": {
+                                    "headTitle": "河道水情告警信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "objName"
+                                        },
+                                        {
+                                            "title": "时间",
+                                            "name": "tm"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "skcxgj.png",
+                        "title": "水库超汛告警",
+                        "metaId": "水库超汛告警",
+                        "default": false,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水库超汛告警",
+                                "viewParams": {
+                                    "headTitle": "水库超汛告警信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "objName"
+                                        },
+                                        {
+                                            "title": "时间",
+                                            "name": "tm"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "szygl.png",
+                "title": "水资源管理",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "qsk.png",
+                        "title": "取水监测计量",
+                        "metaId": "水量监测点信息",
+                        "default": true,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1796524357842496
+                            },
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "水量监测点信息",
+                                "viewParams": {
+                                    "headTitle": "水量监测点信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "name"
+                                        },
+                                        {
+                                            "title": "编码",
+                                            "name": "code"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "区域用水总量",
+                        "metaId": "区域用水总量统计信息",
+                        "filter": [
+                            {
+                                "attr": "",
+                                "childs": [
+                                    {
+                                        "label": "月",
+                                        "value": "月"
+                                    },
+                                    {
+                                        "label": "年",
+                                        "value": "年"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "",
+                                "childs": [
+                                    {
+                                        "label": "总量",
+                                        "value": "总量",
+                                        "default": true
+                                    },
+                                    {
+                                        "label": "地表水",
+                                        "value": "地表水"
+                                    },
+                                    {
+                                        "label": "地下水",
+                                        "value": "地下水"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796527994725952
+                            },
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "区域用水总量统计信息",
+                                "viewParams": {
+                                    "headTitle": "区域用水总量统计信息",
+                                    "fields": [
+                                        {
+                                            "title": "区域",
+                                            "name": "adAbbrName"
+                                        },
+                                        {
+                                            "title": "时间",
+                                            "name": "awDt"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "gcyxgl.png",
+                "title": "工程运行管理",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "dbaq.png",
+                        "title": "大坝安全监测",
+                        "metaId": "大坝安全监测点信息",
+                        "default": true,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1796530597238336
+                            },
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "大坝安全监测点信息",
+                                "viewParams": {
+                                    "headTitle": "大坝安全监测点信息",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "resName"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "pageSize": 20,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "gqgl.png",
+                "title": "灌区管理",
+                "legend": "",
+                "childs": [
+                    {
+                        "icon": "gqm.png",
+                        "title": "灌区面",
+                        "metaId": "灌区面",
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1796529294243392
+                            },
+                            {
+                                "chartViewId": 123,
+                                "chartType": "Table",
+                                "metaId": "灌区面",
+                                "viewParams": {
+                                    "headTitle": "灌区分布",
+                                    "fields": [
+                                        {
+                                            "title": "名称",
+                                            "name": "NAME"
+                                        },
+                                        {
+                                            "title": "行政区",
+                                            "name": "AD_NAME"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "gq.png",
+                        "title": "灌区",
+                        "metaId": "灌区",
+                        "filter": [
+                            {
+                                "attr": "",
+                                "childs": [
+                                    {
+                                        "label": "大中型",
+                                        "value": "大中型"
+                                    },
+                                    {
+                                        "label": "规模以上",
+                                        "value": "规模以上"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796530224215616
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "shi.png",
+                        "title": "灌区取用水量",
+                        "metaId": "灌区取用水量",
+                        "filter": [
+                            {
+                                "attr": "",
+                                "childs": [
+                                    {
+                                        "label": "大中型",
+                                        "value": "大中型",
+                                        "default": true
+                                    },
+                                    {
+                                        "label": "规模以上",
+                                        "value": "规模以上"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "",
+                                "childs": [
+                                    {
+                                        "label": "月",
+                                        "value": "月"
+                                    },
+                                    {
+                                        "label": "年",
+                                        "value": "年"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": []
+                    }
+                ],
+                "charts": []
+            },
+            {
+                "icon": "ncyysaq.png",
+                "title": "农村饮水安全",
+                "legend": "",
+                "childs": [],
+                "charts": []
+            },
+            {
+                "icon": "zxzt.png",
+                "title": "在线制图",
+                "legend": "",
+                "childs": [],
+                "charts": []
+            },
+            {
+                "icon": "sjgx.png",
+                "title": "数据共享",
+                "legend": "",
+                "childs": [],
+                "charts": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,149 @@
+/* 
+全局样式 
+*/
+
+@font-face {
+  font-family: 'PangMenZhengDao';
+  src: url(../public/font/PangMenZhengDaoBiaoTiTi-1.ttf);
+}
+
+@font-face {
+  font-family: 'Alibaba';
+  src: url(../public/font/Alibaba_PuHuiTi.ttf);
+}
+
+
+/* 滚动条的整体样式 */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* 滚动条轨道的样式 */
+::-webkit-scrollbar-track {
+  background-color: #e6e4e4;
+  border-radius: 5px;
+}
+
+/* 滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+  background-color: #a8a8a8;
+  border-radius: 5px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+#root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  font-family: 'Alibaba' !important;
+
+}
+
+.cle:after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.dot {
+  text-overflow: ellipsis;
+  /* 超出部分显示省略号 */
+  white-space: nowrap;
+  /*规定段落中的文本不进行换行 */
+  overflow: hidden;
+}
+
+
+/* 撑满 */
+.brace_up {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition-delay: 9999999999s;
+  -webkit-transition: color 9999999999s ease-out, background-color 99999999s ease-out;
+}
+
+
+
+
+/* 导出 的新建地图 消失 */
+.hidden-map {
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  position: fixed;
+
+}
+
+
+/* 偶数行背景色 */
+.change_bg_color:nth-child(even) {
+  /* background: rgba(41, 90, 180, 0.7); */
+
+  background: rgba(66, 128, 170, 0.30);
+}
+
+/* 奇数行背景色 */
+.change_bg_color:nth-child(odd) {}
+
+
+
+@keyframes zoom_in {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+@keyframes zoom_out {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+
+}
+
+
+
+.mapboxgl-popup-content {
+  background-color: rgba(5, 54, 106, 0.5);
+padding: 4px;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: rgba(5, 54, 106, 0.5);
+}

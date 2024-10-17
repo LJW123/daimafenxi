@@ -1,0 +1,348 @@
+.map_view {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .b_map_view {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .layers_switch {
+    position: absolute;
+
+    right: 8px;
+    right: 72px;
+    right: 1px;
+    bottom: 32px;
+    // bottom: 8px;
+    z-index: 99;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .surface {
+      & > img {
+        // width: 96px;
+        // height: 72px;
+        width: 62px;
+        height: 48px;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 4px;
+      }
+    }
+
+    .menu_list {
+      .menu_li {
+        width: 70px;
+        padding: 4px;
+        border-radius: 4px;
+        transition: all 0.3s;
+
+        .li_img {
+          & > img {
+            width: 62px;
+            height: 48px;
+          }
+        }
+
+        .li_tit {
+          font-size: 12px;
+          text-align: center;
+          transition: all 0.3s;
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: #1890ff;
+        }
+      }
+
+      .li_click {
+        background-color: #1890ff;
+      }
+
+      :global {
+        .ant-dropdown-menu {
+          background: #222534;
+          width: 165px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 4px;
+        }
+
+        .ant-dropdown-menu-item {
+          padding: 4px;
+        }
+
+        .ant-dropdown-arrow {
+          border-right-color: #222534;
+          border-bottom-color: #222534;
+        }
+
+        .ant-dropdown-arrow::before {
+          background-color: #222534;
+        }
+
+        // .ant-checkbox {
+        //   top: 0;
+        // }
+      }
+    }
+  }
+}
+
+:global {
+  /* l7的logo */
+  .l7-control-logo {
+    display: none;
+  }
+
+  /* 去掉mapbox左下角logo */
+  .mapboxgl-ctrl-bottom-left :last-child {
+    display: none;
+  }
+
+  /* 去掉mapbox地图右下角属性标识 */
+  .mapboxgl-ctrl-bottom-right .mapboxgl-ctrl-attrib {
+    display: none;
+  }
+
+  /* 清除mapbox点击选中时黑色边框 */
+  .mapboxgl-canvas-container canvas:focus {
+    outline: none !important;
+  }
+
+  //卷帘
+  .mapboxgl-compare {
+    background-color: #fff;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+  }
+
+  .mapboxgl-compare .compare-swiper-vertical {
+    background-color: #3887be;
+    box-shadow: inset 0 0 0 2px #fff;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: -30px;
+    margin: -30px 1px 0;
+    color: #fff;
+    cursor: ew-resize;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiICAgd2lkdGg9IjYwIiAgIGhlaWdodD0iNjAiICAgdmVyc2lvbj0iMS4xIiAgIHZpZXdCb3g9IjAgMCA2MCA2MCIgICBpZD0ic3ZnNTQzNCIgICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxK2RldmVsK29zeG1lbnUgcjEyOTExIiAgIHNvZGlwb2RpOmRvY25hbWU9Imwtci5zdmciPiAgPG1ldGFkYXRhICAgICBpZD0ibWV0YWRhdGE1NDQ0Ij4gICAgPHJkZjpSREY+ICAgICAgPGNjOldvcmsgICAgICAgICByZGY6YWJvdXQ9IiI+ICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4gICAgICAgIDxkYzp0eXBlICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+ICAgICAgPC9jYzpXb3JrPiAgICA8L3JkZjpSREY+ICA8L21ldGFkYXRhPiAgPGRlZnMgICAgIGlkPSJkZWZzNTQ0MiIgLz4gIDxzb2RpcG9kaTpuYW1lZHZpZXcgICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIgICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IiAgICAgYm9yZGVyb3BhY2l0eT0iMSIgICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiICAgICBncmlkdG9sZXJhbmNlPSIxMCIgICAgIGd1aWRldG9sZXJhbmNlPSIxMCIgICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIgICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTI4NiIgICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9Ijc1MSIgICAgIGlkPSJuYW1lZHZpZXc1NDQwIiAgICAgc2hvd2dyaWQ9InRydWUiICAgICBpbmtzY2FwZTp6b29tPSI0IiAgICAgaW5rc2NhcGU6Y3g9IjI1Ljg4OTgzMSIgICAgIGlua3NjYXBlOmN5PSIzNC4zODE4MzMiICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIgICAgIGlua3NjYXBlOndpbmRvdy15PSIyMyIgICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjAiICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmc1NDM0IiAgICAgaW5rc2NhcGU6b2JqZWN0LW5vZGVzPSJ0cnVlIiAgICAgaW5rc2NhcGU6c25hcC1zbW9vdGgtbm9kZXM9InRydWUiPiAgICA8aW5rc2NhcGU6Z3JpZCAgICAgICB0eXBlPSJ4eWdyaWQiICAgICAgIGlkPSJncmlkNTk4OSIgLz4gIDwvc29kaXBvZGk6bmFtZWR2aWV3PiAgPHBhdGggICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIiAgICAgZD0iTSAyNSAyNCBMIDE2IDMwIEwgMjUgMzYgTCAyNSAyNCB6IE0gMzUgMjQgTCAzNSAzNiBMIDQ0IDMwIEwgMzUgMjQgeiAiICAgICBpZD0icGF0aDU5OTUiIC8+PC9zdmc+);
+  }
+
+  .mapboxgl-compare-horizontal {
+    position: relative;
+    width: 100%;
+    height: 2px;
+  }
+
+  .mapboxgl-compare .compare-swiper-horizontal {
+    background-color: #3887be;
+    box-shadow: inset 0 0 0 2px #fff;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    margin: -30px 1px 0;
+    color: #fff;
+    cursor: ns-resize;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiICAgd2lkdGg9IjYwIiAgIGhlaWdodD0iNjAiICAgdmVyc2lvbj0iMS4xIiAgIHZpZXdCb3g9IjAgMCA2MCA2MCIgICBpZD0ic3ZnNTQzNCIgICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxK2RldmVsK29zeG1lbnUgcjEyOTExIiAgIHNvZGlwb2RpOmRvY25hbWU9Imwtci5zdmciPiAgPG1ldGFkYXRhICAgICBpZD0ibWV0YWRhdGE1NDQ0Ij4gICAgPHJkZjpSREY+ICAgICAgPGNjOldvcmsgICAgICAgICByZGY6YWJvdXQ9IiI+ICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4gICAgICAgIDxkYzp0eXBlICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+ICAgICAgPC9jYzpXb3JrPiAgICA8L3JkZjpSREY+ICA8L21ldGFkYXRhPiAgPGRlZnMgICAgIGlkPSJkZWZzNTQ0MiIgLz4gIDxzb2RpcG9kaTpuYW1lZHZpZXcgICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIgICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IiAgICAgYm9yZGVyb3BhY2l0eT0iMSIgICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiICAgICBncmlkdG9sZXJhbmNlPSIxMCIgICAgIGd1aWRldG9sZXJhbmNlPSIxMCIgICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIgICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTI4NiIgICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9Ijc1MSIgICAgIGlkPSJuYW1lZHZpZXc1NDQwIiAgICAgc2hvd2dyaWQ9InRydWUiICAgICBpbmtzY2FwZTp6b29tPSI0IiAgICAgaW5rc2NhcGU6Y3g9IjI1Ljg4OTgzMSIgICAgIGlua3NjYXBlOmN5PSIzNC4zODE4MzMiICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIgICAgIGlua3NjYXBlOndpbmRvdy15PSIyMyIgICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjAiICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmc1NDM0IiAgICAgaW5rc2NhcGU6b2JqZWN0LW5vZGVzPSJ0cnVlIiAgICAgaW5rc2NhcGU6c25hcC1zbW9vdGgtbm9kZXM9InRydWUiPiAgICA8aW5rc2NhcGU6Z3JpZCAgICAgICB0eXBlPSJ4eWdyaWQiICAgICAgIGlkPSJncmlkNTk4OSIgLz4gIDwvc29kaXBvZGk6bmFtZWR2aWV3PiAgPHBhdGggICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIiAgICAgZD0iTSAyNSAyNCBMIDE2IDMwIEwgMjUgMzYgTCAyNSAyNCB6IE0gMzUgMjQgTCAzNSAzNiBMIDQ0IDMwIEwgMzUgMjQgeiAiICAgICBpZD0icGF0aDU5OTUiIC8+PC9zdmc+);
+    transform: rotate(90deg);
+  }
+
+  //-------结束----------
+
+  //标注 弹出marker样式
+
+  // .txt_label_marker_style {
+  //   .txt_label_marker_content {
+  //     background-size: 100% 100%;
+  //     background-repeat: no-repeat;
+  //     background-position: center;
+
+  //     .content {
+  //       // display: flex;
+  //       // flex-direction: row;
+  //       // align-items: center;
+  //       word-wrap: break-word;
+  //     }
+  //   }
+
+  //   .txt_line_marker_content {
+  //     position: absolute;
+  //     left: calc(50% - 1px);
+  //     z-index: -1;
+  //   }
+  // }
+
+  .txt_label_marker_style2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 0;
+    height: 0;
+
+    .txt_label_marker_content {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+
+      .content {
+        height: 100%;
+        overflow: auto;
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+        word-wrap: break-word;
+      }
+    }
+
+    .txt_line_marker_content {
+      position: absolute;
+    }
+
+    // .txt_line_marker_content {
+    // position: absolute;
+    // left: calc(50% - 1px);
+    // z-index: -1;
+    // }
+  }
+
+  // 信息框
+  .mapbox_marker {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // width: 500px;
+    // height: 500px;
+    // background-color: #fff;
+    // color: #000;
+
+    // .mapbox_marker_content {
+    //   .content {}
+    // }
+
+    // .mapbox_marker_content_g2 {
+    //   width: 200px;
+    //   height: 200px;
+    // }
+
+    // .mapbox_marker_content_click {
+    //   height: 100%;
+    //   // width: 200px;
+    //   // height: 200px;
+    //   border: 1px solid #000;
+    //   background-color: #fff;
+
+    //   .m_con {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+
+    //     .m_con_li {
+    //       display: flex;
+    //       flex-direction: row;
+    //       justify-content: space-between;
+
+    //       // .m_con_label {
+    //       // }
+
+    //       // .m_con_value {
+    //       // }
+    //     }
+    //   }
+    // }
+
+    // .mapbox_marker_title {
+    //   position: relative;
+    //   margin-left: 7px;
+    //   min-width: 87px;
+
+    //   .mapbox_marker_title_con {
+    //     // min-width: 70px;
+    //     text-align: center;
+    //     line-height: normal;
+    //     padding: 0 8px;
+    //     text-align-last: justify;
+    //   }
+
+    //   .mapbox_marker_title_bg {
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: -1;
+    //     transform: rotateZ(0deg) skew(-20deg, 0deg);
+    //     background-color: orange;
+    //   }
+    // }
+
+    // .mapbox_marker_content {
+    //   border: 1px solid #000;
+    //   background-color: #fff;
+    //   color: rgba(0, 0, 0, 0.65);
+    //   min-width: 100px;
+    //   width: calc(100% + 20px);
+    //   min-height: 10px;
+    //   padding: 4px;
+    // }
+  }
+
+  // .mapbox_info_div_marker {
+  //   border: 2px solid #000;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: stretch;
+
+  //   .mapbox_info_div_marker_con {
+  //     flex: 1;
+  //     background-color: rgba(255, 255, 255, 1);
+  //     border-top: 2px solid #000;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+
+  //     &:nth-child(3) {
+  //       // background-color: rgba(255, 255, 0, 1);
+  //     }
+  //   }
+
+  //   &> :first-child {
+  //     border-top: none;
+  //   }
+
+  //   .mapbox_info_div_marker_hen {
+  //     height: 2px;
+  //     position: absolute;
+  //     z-index: -11;
+  //   }
+
+  //   .mapbox_info_div_marker_shu {
+  //     width: 2px;
+  //     position: absolute;
+  //     z-index: -11;
+  //   }
+  // }
+}

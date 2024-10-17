@@ -1,0 +1,184 @@
+[
+    {
+        "type": "data",
+        "source": "10亿径流量河流",
+        "title": "重点河流",
+        "style": {
+            "width": 400,
+            "height": 500
+        },
+        "attribute": [
+            {
+                "name": "LVL",
+                "label": "年径流量级别"
+            },
+            {
+                "name": "BANK",
+                "label": "岸别"
+            },
+            {
+                "name": "NAME",
+                "label": "河流名称"
+            },
+            {
+                "name": "NOTE",
+                "label": "备注"
+            },
+            {
+                "name": "IS_DEL",
+                "label": "是否删除"
+            },
+            {
+                "name": "RV_LAT",
+                "label": "中心点纬度"
+            },
+            {
+                "name": "RV_LEN",
+                "label": "河流长度/km"
+            },
+            {
+                "name": "UserID",
+                "label": ""
+            },
+            {
+                "name": "RV_GRAD",
+                "label": "河流级别"
+            },
+            {
+                "name": "RV_LONG",
+                "label": "中心点经度"
+            },
+            {
+                "name": "RV_TYPE",
+                "label": "河流类型"
+            },
+            {
+                "name": "EFF_DATE",
+                "label": "记录生效时间"
+            },
+            {
+                "name": "OBJ_CODE",
+                "label": "河流代码"
+            },
+            {
+                "name": "OBJ_NAME",
+                "label": "河流名称"
+            },
+            {
+                "name": "OBJ_TYPE",
+                "label": "河流类型"
+            },
+            {
+                "name": "AVER_SLOP",
+                "label": "平均比降/‰"
+            },
+            {
+                "name": "EXPR_DATE",
+                "label": "记录实效时间"
+            },
+            {
+                "name": "FLOW_AREA",
+                "label": "流经地区"
+            },
+            {
+                "name": "OBJ_GRADE",
+                "label": "河流级别"
+            },
+            {
+                "name": "统计河",
+                "label": "统计河"
+            },
+            {
+                "name": "统计面",
+                "label": "统计面"
+            },
+            {
+                "name": "CR_OVER_TY",
+                "label": "跨界类型"
+            },
+            {
+                "name": "LON_AVER_A",
+                "label": "多年平均流量/m3/s"
+            },
+            {
+                "name": "RV_BAS_ARE",
+                "label": "河流流域面积/km2"
+            },
+            {
+                "name": "RV_MOU_LAT",
+                "label": "河口纬度"
+            },
+            {
+                "name": "RV_MOU_LOC",
+                "label": "河口所在地"
+            },
+            {
+                "name": "RV_MOU_LON",
+                "label": "河口经度"
+            },
+            {
+                "name": "RV_SOUR_LA",
+                "label": "河源纬度"
+            },
+            {
+                "name": "RV_SOUR_LO",
+                "label": "河源所在地"
+            },
+            {
+                "name": "RV_SOUR__1",
+                "label": "河源经度"
+            }
+        ]
+    },
+    {
+        "type": "data",
+        "source": "水库信息",
+        "title": "水库信息",
+        "style": {
+            "width": 400,
+            "height": 500
+        },
+        "attribute": [
+            {
+                "name": "name",
+                "label": "名称"
+            },
+            {
+                "name": "code",
+                "label": "编码"
+            },
+            {
+                "name": "n3",
+                "label": "所在县"
+            },
+            {
+                "name": "n2",
+                "label": "所在市"
+            },
+            {
+                "name": "n1",
+                "label": "所在省"
+            }
+        ]
+    },
+    {
+        "type": "data",
+        "source": "重点监控水库",
+        "title": "水库",
+        "style": {
+            "width": 300,
+            "height": 240
+        },
+ 
+        "attribute": [
+            {
+                "name": "RES_CODE",
+                "label": "水库代码"
+            },
+            {
+                "name": "RES_NAME",
+                "label": "水库名称"
+            }
+        ]
+    }
+]

@@ -1,0 +1,30 @@
+.right_view {
+    height: calc(100% - 90px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    z-index: 100;
+    transition: all 0.3s;
+    // background: linear-gradient(270deg, rgba(19, 89, 151, 0.70), rgba(14, 66, 113, 0.20));
+    background: linear-gradient(270deg, #031D37 0%, rgba(21, 52, 81, 0.2) 100%);
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #76d2ff, rgba(100, 173, 237, 0)) 1 1;
+
+    .spin_content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    :global {
+        .ant-spin-nested-loading {
+            height: 100%;
+        }
+
+        .ant-spin-nested-loading .ant-spin-container {
+            height: 100%;
+        }
+    }
+}

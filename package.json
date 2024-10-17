@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "author": "kanghaoyu <975887505@qq.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@ant-design/icons": "5.4.0",
+    "@antv/g2": "5.2.2",
+    "@antv/g6": "^5.0.19",
+    "@turf/turf": "7.0.0",
+    "@umijs/plugin-esbuild": "^1.4.2",
+    "ag-grid-react": "^32.1.0",
+    "ahooks": "^3.8.1",
+    "antd": "5.20.0",
+    "axios": "^1.7.3",
+    "base64js": "^1.0.1",
+    "canvg": "^4.0.2",
+    "color": "^4.2.3",
+    "crypto-js": "4.2.0",
+    "dayjs": "^1.11.12",
+    "deck.gl": "8.9.14",
+    "file-saver": "^2.0.5",
+    "gl-matrix": "^3.4.3",
+    "mobx": "^6.13.1",
+    "mobx-react-lite": "^4.0.7",
+    "proj4": "^2.11.0",
+    "rc-color-picker": "^1.2.6",
+    "rc-picker": "^4.6.13",
+    "react-jsx-parser": "^2.0.0",
+    "short-uuid": "^5.2.0",
+    "umi": "^4.3.11",
+    "uuid": "^10.0.0",
+    "virtualizedtableforantd4": "^1.3.1",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.3"
+  }
+}

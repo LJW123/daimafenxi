@@ -1,0 +1,776 @@
+{
+    "styleSchema": {
+        "mainPage": {
+            "bgImage": "homebg.png"
+        },
+        "headerPage": {
+            "bgImage": "header.png",
+            "style": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "height": 64,
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover"
+            }
+        },
+        "leftPage": {
+            "bgImage": "leftbg.png",
+            "titleImage": "left_title.png",
+            "style": {
+                "top": 40,
+                "left": 0
+            }
+        },
+        "rightPage": {
+            "bgImage": "",
+            "style": {
+                "width": 400,
+                "top": 40,
+                "right": 0
+            }
+        }
+    },
+    "dataSchema": {
+        "pageDatas": [
+            {
+                "icon": "hh_oneMap.png",
+                "title": "一张图",
+                "legend": "",
+                "childs": [
+                    {
+                        "title": "L1",
+                        "metaId": "重点河流监控点",
+                        "default": true,
+                        "icon": "hh_tc.png",
+                        "filter": [
+                            {
+                                "attr": "atts.sky",
+                                "childs": [
+                                    {
+                                        "label": "天地图标记",
+                                        "value": "sky",
+                                        "icon": "hh_tdt.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.dx",
+                                "childs": [
+                                    {
+                                        "label": "地形高程",
+                                        "value": "dxgc",
+                                        "icon": "hh_dxgc.png"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796386730772032
+                            },
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "重点河流监控点",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "位置"
+                                        },
+                                        {
+                                            "title": "河流名",
+                                            "name": "河流名"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": "L2",
+                        "metaId": "重点河流监控点",
+                        "default": true,
+                        "icon": "hh_tc.png",
+                        "filter": [
+                            {
+                                "attr": "atts.riverway",
+                                "childs": [
+                                    {
+                                        "label": "河道影像",
+                                        "value": "riverway",
+                                        "icon": "hh_hdyx.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.gcgl",
+                                "childs": [
+                                    {
+                                        "label": "工程管理范围",
+                                        "value": "gcgl",
+                                        "icon": "hh_gcgl.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.hdgl",
+                                "childs": [
+                                    {
+                                        "label": "河道管理范围",
+                                        "value": "hdgl",
+                                        "icon": "hh_tdt.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.jczd",
+                                "title": "监测站点",
+                                "icon": "hh_tc.png",
+                                "childs": [
+                                    {
+                                        "label": "监测站点",
+                                        "value": "jczd"
+                                    }
+                                ],
+                                "filter": [
+                                    {
+                                        "attr": "atts.qxz",
+                                        "childs": [
+                                            {
+                                                "icon": "hh_qxz.png",
+                                                "label": "气象站",
+                                                "value": "qxz"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attr": "atts.ylz",
+                                        "childs": [
+                                            {
+                                                "label": "雨量站",
+                                                "value": "ylz",
+                                                "icon": "hh_ylz.png"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attr": "atts.hdz",
+                                        "childs": [
+                                            {
+                                                "label": "河道站",
+                                                "value": "hdz",
+                                                "icon": "hh_hdz.png"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.hfgc",
+                                "title": "河防工程",
+                                "icon": "hh_tc.png",
+                                "childs": [
+                                    {
+                                        "label": "河防工程",
+                                        "value": "hfgc"
+                                    }
+                                ],
+                                "filter": [
+                                    {
+                                        "attr": "atts.zggc",
+                                        "title": "直管工程",
+                                        "childs": [
+                                            {
+                                                "label": "直管工程",
+                                                "value": "zggc"
+                                            }
+                                        ],
+                                        "filter": [
+                                            {
+                                                "attr": "atts.df",
+                                                "childs": [
+                                                    {
+                                                        "label": "堤防",
+                                                        "value": "df",
+                                                        "icon": "hh_df.png"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attr": "atts.sz",
+                                                "childs": [
+                                                    {
+                                                        "label": "水闸",
+                                                        "value": "sz",
+                                                        "icon": "hh_sz.png"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attr": "atts.kd",
+                                                "childs": [
+                                                    {
+                                                        "label": "控导",
+                                                        "value": "kd",
+                                                        "icon": "hh_kd.png"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attr": "atts.xg",
+                                                "childs": [
+                                                    {
+                                                        "label": "险工",
+                                                        "value": "xg",
+                                                        "icon": "hh_xg.png"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attr": "atts.sk",
+                                                "childs": [
+                                                    {
+                                                        "label": "水库",
+                                                        "value": "sk",
+                                                        "icon": "hh_sk.png"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attr": "atts.shjs",
+                                        "title": "涉河建设项目",
+                                        "childs": [
+                                            {
+                                                "label": "涉河建设项目",
+                                                "value": "shjs"
+                                            }
+                                        ],
+                                        "filter": [
+                                            {
+                                                "attr": "atts.kh",
+                                                "childs": [
+                                                    {
+                                                        "label": "跨河",
+                                                        "value": "kh",
+                                                        "icon": "hh_kh.png"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attr": "atts.ch",
+                                                "childs": [
+                                                    {
+                                                        "label": "穿河",
+                                                        "value": "ch",
+                                                        "icon": "hh_ch.png"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attr": "atts.lh",
+                                                "childs": [
+                                                    {
+                                                        "label": "临河",
+                                                        "value": "lh",
+                                                        "icon": "hh_lh.png"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attr": "atts.zjgc",
+                                        "childs": [
+                                            {
+                                                "label": "在建工程",
+                                                "value": "zjgc",
+                                                "icon": "hh_zjgc.png"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796386730772032
+                            },
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "重点河流监控点",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "位置"
+                                        },
+                                        {
+                                            "title": "河流名",
+                                            "name": "河流名"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": "L3",
+                        "metaId": "重点河流监控点",
+                        "default": true,
+                        "icon": "hh_tc.png",
+                        "filter": [
+                            {
+                                "attr": "atts.3d",
+                                "title": "实景三维模型",
+                                "icon": "hh_tc.png",
+                                "childs": [
+                                    {
+                                        "label": "实景三维模型",
+                                        "value": "3d",
+                                        "childs": [
+                                            {
+                                                "label": "工程水库",
+                                                "value": "gcsk"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "filter": [
+                                    {
+                                        "attr": "atts.gcsk",
+                                        "title": "工程水库",
+                                        "icon": "hh_tc.png",
+                                        "childs": [
+                                            {
+                                                "label": "工程水库",
+                                                "value": "gcsk"
+                                            }
+                                        ],
+                                        "filter": [
+                                            {
+                                                "attr": "atts.smxsk",
+                                                "childs": [
+                                                    {
+                                                        "label": "三门峡水库",
+                                                        "value": "smxsk"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796386730772032
+                            },
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "重点河流监控点",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "位置"
+                                        },
+                                        {
+                                            "title": "河流名",
+                                            "name": "河流名"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": [
+                    {
+                        "chartViewId": 1795327902762560
+                    }
+                ]
+            },
+            {
+                "icon": "hh_warn.png",
+                "title": "监测预警",
+                "legend": "",
+                "childs": [
+                    {
+                        "title": "工程险情监测",
+                        "metaId": "工程险情监测",
+                        "icon": "hh_tc.png",
+                        "default": true,
+                        "filter": [
+                            {
+                                "attr": "atts.tqyb",
+                                "childs": [
+                                    {
+                                        "label": "天气预报",
+                                        "value": "tqyb",
+                                        "icon": "hh_tqyb.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.tayj",
+                                "childs": [
+                                    {
+                                        "icon": "hh_tqyj.png",
+                                        "label": "天气预警",
+                                        "value": "tayj"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.ssgc",
+                                "childs": [
+                                    {
+                                        "icon": "hh_ssgc.png",
+                                        "label": "实时工程",
+                                        "value": "ssgc"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796386730772032
+                            },
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "工程险情监测",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "位置"
+                                        },
+                                        {
+                                            "title": "河流名",
+                                            "name": "河流名"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": "河道工程监测",
+                        "metaId": "河道工程监测",
+                        "icon": "hh_tc.png",
+                        "default": true,
+                        "filter": [
+                            {
+                                "attr": "atts.dftc",
+                                "childs": [
+                                    {
+                                        "icon": "hh_dftc.png",
+                                        "label": "堤防探测",
+                                        "value": "dftc"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.gstc",
+                                "childs": [
+                                    {
+                                        "icon": "hh_gstc.png",
+                                        "label": "根石探测",
+                                        "value": "gstc"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.hstc",
+                                "childs": [
+                                    {
+                                        "icon": "hh_hstc.png",
+                                        "label": "河势探测",
+                                        "value": "hstc"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796386730772032
+                            },
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "重点河流监控点",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "位置"
+                                        },
+                                        {
+                                            "title": "河流名",
+                                            "name": "河流名"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": "辅助决策",
+                        "metaId": "辅助决策",
+                        "default": true,
+                        "icon": "hh_tc.png",
+                        "filter": [
+                            {
+                                "attr": "atts.yagl",
+                                "childs": [
+                                    {
+                                        "icon": "hh_yagl.png",
+                                        "label": "预案管理",
+                                        "value": "yagl"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.fxdw",
+                                "childs": [
+                                    {
+                                        "icon": "hh_fxdw.png",
+                                        "label": "防汛队伍",
+                                        "value": "fxdw"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.qxzj",
+                                "childs": [
+                                    {
+                                        "icon": "hh_qxzj.png",
+                                        "label": "抢险专家",
+                                        "value": "qxzj"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.wzck",
+                                "childs": [
+                                    {
+                                        "icon": "hh_wzck.png",
+                                        "label": "物资仓库",
+                                        "value": "wzck"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796386730772032
+                            },
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "L3",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "位置"
+                                        },
+                                        {
+                                            "title": "河流名",
+                                            "name": "河流名"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": [
+                    {
+                        "chartViewId": 1795327902762560
+                    }
+                ]
+            },
+            {
+                "icon": "hh_engine.png",
+                "title": "工程监管",
+                "legend": "",
+                "childs": [
+                    {
+                        "title": "四乱问题清单",
+                        "metaId": "四乱问题清单",
+                        "icon": "hh_tc.png",
+                        "default": true,
+                        "filter": [
+                            {
+                                "attr": "atts.lz",
+                                "childs": [
+                                    {
+                                        "label": "乱占",
+                                        "value": "lz"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.lc",
+                                "childs": [
+                                    {
+                                        "label": "乱采",
+                                        "value": "lc"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.ld",
+                                "childs": [
+                                    {
+                                        "label": "乱堆",
+                                        "value": "ld"
+                                    }
+                                ]
+                            },
+                            {
+                                "attr": "atts.lj",
+                                "childs": [
+                                    {
+                                        "label": "乱建",
+                                        "value": "lj"
+                                    }
+                                ]
+                            }
+                        ],
+                        "charts": [
+                            {
+                                "chartViewId": 1796386730772032
+                            },
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "工程险情监测",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "位置"
+                                        },
+                                        {
+                                            "title": "河流名",
+                                            "name": "河流名"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": "活动监管台账",
+                        "metaId": "活动监管台账",
+                        "default": true,
+                        "filter": [],
+                        "charts": [
+                            {
+                                "chartViewId": 1796386730772032
+                            },
+                            {
+                                "chartViewId": 1786904199878208,
+                                "chartType": "Table",
+                                "metaId": "工程险情监测",
+                                "viewParams": {
+                                    "headTitle": "河流监控点列表",
+                                    "fields": [
+                                        {
+                                            "title": "位置",
+                                            "name": "位置"
+                                        },
+                                        {
+                                            "title": "河流名",
+                                            "name": "河流名"
+                                        }
+                                    ]
+                                },
+                                "queryParams": {
+                                    "sType": "query",
+                                    "rType": "json",
+                                    "pageSize": 1000,
+                                    "pageNum": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "charts": [
+                    {
+                        "chartViewId": 1795327902762560
+                    }
+                ]
+            },
+            {
+                "icon": "hh_data.png",
+                "title": "数据管理",
+                "legend": "",
+                "childs": [],
+                "charts": [
+                    {
+                        "chartViewId": 1795327902762560
+                    }
+                ]
+            }
+        ]
+    }
+}

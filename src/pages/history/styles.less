@@ -1,0 +1,38 @@
+.history_view {
+  position: absolute;
+  top: 64px;
+  height: calc(100% - 64px);
+  width: 100%;
+  color: black;
+  background-color: #f0f3fa;
+
+  .content_view {
+    margin: 16px;
+    padding: 16px;
+    height: calc(100% - 64px);
+    background-color: white;
+
+    .tabs_view {
+      display: flex;
+      border-bottom: 1px solid #e1e1e2;
+
+      .tabs_item {
+        padding: 4px 16px;
+        border: 1px solid #e1e1e2;
+        border-bottom: none;
+        margin-right: 8px;
+        border-radius: 4px 4px 0 0;
+        cursor: pointer;
+      }
+
+      .tabs_item_sel {
+        background-color: #1890ff;
+        color: white;
+      }
+    }
+
+    .search_view {
+      margin: 12px 0;
+    }
+  }
+}

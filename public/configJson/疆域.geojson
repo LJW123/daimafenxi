@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "crs": { "type": "name", "properties": { "name": "EPSG:4326" } },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[1, 1]]]
+      },
+      "properties": { "FID": 0, "ADNT": "北美", "DIST_NAME": "北美" }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[1, 1]]]
+      },
+      "properties": { "FID": 1, "ADNT": "东美", "DIST_NAME": "东美" }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[1, 1]]
+      },
+      "properties": { "FID": 2, "ADNT": "南美", "DIST_NAME": "南美" }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[1, 1]]
+      },
+      "properties": {
+        "FID": 3,
+        "ADNT": "美族区",
+        "DIST_NAME": "美族区"
+      }
+    }
+  ]
+}

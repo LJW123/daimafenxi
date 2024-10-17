@@ -1,0 +1,94 @@
+ .query_data_view {
+     position: absolute;
+     z-index: 0;
+
+     .arrow_border {
+         position: absolute;
+         width: 0;
+         height: 0;
+         border-width: 10px;
+         border-style: solid;
+         border-color: transparent;
+
+         .arrow {
+             position: absolute;
+             width: 0;
+             height: 0;
+             border-width: 9px;
+             border-style: solid;
+             border-color: transparent;
+
+         }
+     }
+
+
+     .content_view {
+         background-color: rgba(0, 48, 94, 0.6);
+         border: 1px solid #63E0FF;
+         border-radius: 8px;
+         padding: 8px;
+         margin: 10px;
+         height: calc(100% - 36px);
+
+         &:hover {
+             .data_view {
+                 overflow-y: auto;
+
+             }
+         }
+
+         .head_view {
+             height: 24px;
+             display: flex;
+             flex-direction: row;
+             justify-content: flex-end;
+
+             .details {
+                 cursor: pointer;
+                 margin-right: 20px;
+
+                 &:hover {
+                     color: #63E0FF;
+                 }
+             }
+
+             .close_btn {
+                 color: white;
+                 font-size: 12px;
+                 cursor: pointer;
+             }
+         }
+
+
+         .data_view {
+             height: calc(100% - 28px);
+             overflow-y: hidden;
+             //  overflow-y: auto;
+
+             :global {
+
+                 .ant-descriptions .ant-descriptions-item-content,
+                 .ant-descriptions.ant-descriptions-bordered>.ant-descriptions-view .ant-descriptions-row>.ant-descriptions-item-label {
+                     color: white;
+                 }
+
+                 .ant-descriptions.ant-descriptions-bordered>.ant-descriptions-view {
+                     border: 1px solid #2A9BFF;
+                 }
+
+                 .ant-descriptions.ant-descriptions-bordered>.ant-descriptions-view .ant-descriptions-row {
+                     border-bottom: 1px solid #2A9BFF;
+                 }
+
+                 .ant-descriptions.ant-descriptions-bordered>.ant-descriptions-view .ant-descriptions-row:last-child {
+                     border-bottom: none;
+                 }
+
+                 .ant-descriptions.ant-descriptions-bordered>.ant-descriptions-view .ant-descriptions-row>.ant-descriptions-item-label {
+                     border-inline-end: 1px solid #2A9BFF;
+                 }
+             }
+         }
+     }
+
+ }

@@ -1,0 +1,25 @@
+.tabs_view {
+  height: 100%;
+
+  .results_view {
+    .results_head_view {
+      text-align: right;
+      margin-bottom: 8px;
+    }
+
+    .result_item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+  }
+
+  :global {
+
+    .ant-tabs,
+    .ant-tabs .ant-tabs-content,
+    .ant-tabs .ant-tabs-tabpane {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.count_modal {
+  .title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom: 1px solid white;
+
+    img {
+      margin-right: 16px;
+    }
+  }
+
+  .footer_view {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      margin: 0 8px;
+      width: 50%;
+      text-align: center;
+      padding: 4px 0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn_cancel {
+      background-color: #2ca4ff;
+    }
+
+    .btn_submit {
+      background-color: #e8b66e;
+    }
+  }
+
+  :global {
+    .ant-modal .ant-modal-content {
+      background-color: rgba(1, 79, 177, .5);
+      color: #fff;
+    }
+
+    .ant-modal .ant-modal-title {
+      color: #fff;
+    }
+
+    .ant-modal .ant-modal-close {
+      color: #fff;
+    }
+
+    .ant-modal .ant-modal-header {
+      background: none;
+    }
+
+    .ant-form-item {
+      background: rgba(86, 162, 245, .3);
+      border-radius: 4px;
+    }
+
+    .ant-form-item .ant-form-item-label>label {
+      color: white;
+    }
+
+  }
+}

@@ -1,0 +1,50 @@
+.tools_page_view {
+    position: absolute;
+    z-index: 100;
+    transition: all 0.3s;
+    top: 80px;
+    right: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    .list_data {
+        width: 44px;
+
+        .list_li {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            // height: 44px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            .icon_view {
+                width: 36px;
+                height: 36px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+        }
+    }
+
+
+    .item_up {
+        min-width: 200px;
+        padding: 8px 16px 8px 8px;
+        min-height: 60px;
+        position: absolute;
+        top: 0;
+        right: 46px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        background: linear-gradient(270deg, rgba(42, 80, 132, 0.9) 0%, rgba(22, 43, 75, 0.9) 100%);
+        border-radius: 6px 6px 6px 6px;
+    }
+}

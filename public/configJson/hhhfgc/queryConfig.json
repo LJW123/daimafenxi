@@ -1,0 +1,15 @@
+[
+    {
+        "metaId": "元信息id",
+        "city": "市",
+        "county": "县"
+    },
+    {
+        "a": "水库",
+        "metaId": "重点监控水库",
+        "city": "atts.AD_NAME",
+        "county": "atts.COUNTRY_NAME",
+        "rv_name": "atts.RES_RV_NAM",
+        "name": "atts.RES_NAME"
+    }
+]

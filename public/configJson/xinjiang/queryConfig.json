@@ -1,0 +1,74 @@
+[
+    {
+        "metaId": "元信息id",
+        "city": "市",
+        "county": "县"
+    },
+ 
+    {
+        "metaId": "行政区划",
+        "city": "DIST_NAME",
+        "county": "count_name"
+    },
+    {
+        "a": "河流",
+        "metaId": "重点河流监控点",
+        "rv_name":"atts.河流名",
+        "city": "atts.地州市",
+        "county": "atts.县（市"
+    },
+    {
+        "a": "湖泊",
+        "metaId": "重点湖泊监控点",
+        "city": "atts.所属地",
+        "county": "atts.县/市/"
+    },
+    {
+        "a": "水库",
+        "metaId": "重点监控水库",
+        "city": "AD_NAME",
+        "county": "COUNTRY_NAME",
+        "rv_name": "RES_RV_NAME",
+        "name": "RES_NAME"
+    },
+    {
+        "a": "水文站",
+        "metaId": "重点监控水文站",
+        "city": "atts.ST_CITY",
+        "county": "atts.ST_COUNTRY",
+        "rv_name":"atts.HNNM"
+    },
+    {
+        "a": "取水口",
+        "metaId": "重点监控取水口",
+        "city": "WVST_CITY",
+        "county": "WVST_COUNTRY",
+        "rv_name":"RV_NAME"
+    },
+    {
+        "a": "交汇口",
+        "metaId": "重要干支流交汇口",
+        "city": "atts.交汇口",
+        "county": "atts.县市区",
+        "rv_name":"atts.主河流",
+        "流域字段":"atts.流域"
+    },
+    {
+        "a": "在建工程",
+        "metaId": "重点监控在建工程",
+        "city": "atts.所属地",
+        "county": "atts.所在县/",
+        "rv_name":"atts.工程所"
+    }
+
+
+
+
+
+
+
+
+
+
+
+]
